@@ -1,8 +1,8 @@
 <!-- Made with ❤️ by Smashtika(@yungDoom) -->
 
-![Icon](/other/design/iconv2.1/iconv2.1.png)
+![Icon](/other/design/iconv2.2/iconv2.2.png)
 
-# 📜 GTA V Source Code Build Guide V2.1
+# 📜 GTA V Source Code Build Guide V2.2
  
 🖥️ **Working Status of Tools and Game:** [See Here](/workingstatus.md)<br>
 🔨 **Known Bugs, Errors and Issues:** [See Here](/knownissues.md)
@@ -10,7 +10,7 @@
 ⚠️ *If you having any problem, let us know in the ["Issues"](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/issues) section of this repository!*<br>
 💬 *You can check out ["Discussions"](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/discussions) for talking and discuss.*
 
-## Requirements
+## Prerequisites
 ### Base
  - Windows 10/11
     - [LTSC 2021](https://archive.org/download/Windows10EnterpriseLTSC202164Bit/en-us_windows_10_enterprise_ltsc_2021_x64_dvd_d289cf96.iso) Recommended, but you can use Normal Windows 10/11 too.
@@ -53,7 +53,7 @@ ___
 > It's not recommended on your Real PC because sometimes the conflicts may happen and broke the whole compilation process.<br>
 > **VMWare/Hyper-V are recommended to run the Virtual Machine due to their performance. VirtualBox will probably work too.**
 
-## Prerequisite Setup
+## Prerequisites Setup
 1. Install DirectX SDK June 2010
 2. Install 7-Zip
 3. Install Visual Studio 2012
@@ -145,7 +145,7 @@ ragScriptEditor
 ## Patching Game Assets
 
 #### Putting update.rpf and update2.rpf
-1. Install ``update.rpf and update2.rpf from GTA V build 2699`` from [Requirements](#requirements)
+1. Install ``update.rpf and update2.rpf from GTA V build 2699`` from [Prerequisite](#prerequisites)
 2. Put `update.rpf` and `update2.rpf` files to `<Game Directory>\update\` folder.
    * **Dont forget to backup your old files from update folder.**
 
