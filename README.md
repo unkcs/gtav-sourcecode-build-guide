@@ -145,7 +145,7 @@ ragScriptEditor
 ## Patching Game Assets
 
 #### Putting update.rpf and update2.rpf
-1. Install ``update.rpf and update2.rpf from GTA V build 2699`` from [Prerequisite](#prerequisites)
+1. Install ``update.rpf and update2.rpf from GTA V build 2699`` from [Prerequisites List](#prerequisites)
 2. Put `update.rpf` and `update2.rpf` files to `<Game Directory>\update\` folder.
    * **Dont forget to backup your old files from update folder.**
 
