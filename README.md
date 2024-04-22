@@ -14,8 +14,8 @@
 ### Base
  - Windows 10/11
     - [LTSC 2021](https://archive.org/download/Windows10EnterpriseLTSC202164Bit/en-us_windows_10_enterprise_ltsc_2021_x64_dvd_d289cf96.iso) Recommended, but you can use Normal Windows 10/11 too.
- - Latest Grand Theft Auto V Files from Steam, Epic Games or Rockstar Games Launcher.
- - Minimum 50GB Free Space, 130GB+ is Recommended because of the game files.
+ - Latest Grand Theft Auto V Files from Steam, Epic Games or maybe Rockstar Games Launcher. 
+ - Minimum 65GB Free Space, 140GB+ is Recommended because of the game files and programs.
  - GTAVSP.7z - Source Code<br>
     - **Download Link: [All Available Download Links](/source-code-links.md)**
     - Archive Password: `Mi76#b>9mRed`
@@ -171,19 +171,6 @@ If you ever modify the RPF files, dont forget to encrpyt them.<br>
 ##### Prebuilt Scripts
 * Scripts Already included in update2.rpf, you can replace it in future with one that you builded it.
 
-
-<!-- This can be skipped because i already included everything in the update.rpf and update2.rpf.
-
-1. (OPTIONAL) Fix Story Mode by following the steps at the bottom:
-   1. Open `<Game Directory>\update\update.rpf\common\data` and make sure "Edit Mode" is enabled
-   2. Under "XML Text Files", right-click `gameconfig.xml` and click "Edit"
-   3. Under "Search", type "51000"
-   4. Change the value of `51000` to `53000`
-   5. Click "Save"
-2. Close OpenIV
-
--->
-
 ## Running The Game
 1. In the game directory, create a file named `launch.bat` and add these contents:
 ```batch
@@ -191,13 +178,13 @@ cd %~dp0
 game_win64_bankrelease.exe -noSocialClub -nokeyboardhook -nonetlogs
 ```
 2. (OPTIONAL) Add additional arguments:
- - `-kbgame` - Start game with game keyboard enabled.
- - `-output` - Show console log of game.
- - `-rag` - Enable support for RAG, the internal game debugging tool.
-    - `-ragUseOwnWindow` - Use it with `-rag` parameter to make game run outside of RAG Render Window.
-    - **DO NOT** Forget to Launch RAG Before launching the game if u using any RAG parameters.
- - `-DoReleaseStartup` - Start real Story Mode on launch, Ignore if it says unknown parameter/command.
-    - If you dont type this parameter, you will spawned in a random location as a random character with a random clothes. 
+ - `-kbgame` - Start game with game keyboard enabled
+ - `-output` - Show console log of game, the game opens a little bit slow.
+ - `-rag` - Enable support for RAG, the internal game debugging tool
+    - `-ragUseOwnWindow` - Use it with `-rag` parameter to make game run outside of RAG Render Window
+    - **DO NOT** Forget to Launch RAG Before launching the game if u using any RAG parameters
+ - `-DoReleaseStartup` - Start real Story Mode on launch, Ignore if it says unknown parameter/command
+    - If you dont type this parameter, you will spawned in a random location as a random character with a random clothes
  - Additional standard game arguments can be added as well.
    - [Here is the almost all the arguments list](other/LAUNCHPARAMS_GTAV.txt) 
 3. (OPTIONAL) Launch RAG with the following commands in Command Prompt:
@@ -216,6 +203,7 @@ rag
 
 # Final Thoughts
 
-Thanks for reading my precious tutorial, please consider starring or forking the repository if this helped u.
+Thanks for reading my precious tutorial, please consider starring or forking the repository if this helped u<br>
+**Feel free to contribute the repository, you'll be welcomed if you dont make stupid thingies.**
 
 <!-- Made with ❤️ by Smashtika(@yungDoom) -->
