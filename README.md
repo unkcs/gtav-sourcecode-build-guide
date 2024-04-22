@@ -140,7 +140,7 @@ ragScriptEditor
 ```
 3. In the editor, select `File > Open Project` and open `X:\gta5\script\dev_ng\singleplayer\GTA5_SP.scproj`.
 4. Select `Compiling > Intellibuild > Build Project`.
-5. After that, [You should check out this in order to make your own scripts to work.](#replacing-script.rpf)
+5. After that, [You should check out this in order to make your own scripts to work.](#replacing-scriptrpf)
 
 
 ## Patching Game Assets
