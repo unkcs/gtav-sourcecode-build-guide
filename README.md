@@ -2,7 +2,7 @@
 
 ![Icon](/other/design/icon/icon.png)
 
-# 📜 GTA V Source Code Build Guide
+<h1 align=center>📜 -> GTA V Source Code Build Guide <- 📜</h1>
  
 🖥️ **Working Status of Tools and Game:** [See Here](/workingstatus.md)<br>
 🔨 **Known Bugs, Errors and Issues:** [See Here](/knownissues.md)
@@ -41,6 +41,8 @@
  - [DLL Patches](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/files/14965810/dll_patches_x.zip)
  - (OPTIONAL) [3rdParty Folder](https://mega.nz/file/SqojFJZL#eYINo1pnspuTvdbocz4cA7NYZA8BN2H2nm7YEXuzlFw)
  - (OPTIONAL) [gIKgDXuVHNzIgXkiwpB.zip - Art Asset Leak](https://big.fileditchnew.ch/b9/gIKgDXuVHNzIgXkiwpB.zip)
+ - (OPTIONAL & NOT STABLE) [Visual Studio 2022 Patches](https://small.fileditchstuff.me/s10/VBlSfKBylNQplMIPLL.zip)
+    - Presented by [@userTermzik](https://github.com/userTermzik), but i don't recommend this because it needs some fixes. 
 
 ## Prebuilt Files
  - [Shaders](https://github.com/WH0LEWHALE/gtav-sourcecode-build-guide/files/14649717/common.zip) ([You can build your own shaders and play with them without any problem.](#building-shaders))
@@ -72,7 +74,7 @@ ___
     1. Open Command Prompt
     2. Create a new folder called "GTA" to the Desktop or anywhere that you want
     3. Run `net use X: \\localhost\c$\<Path to working folder for build> /persistent:yes`
-       - Example: `net use X: \\localhost\c$\Users\abcd\Desktop\GTA /persistent:yes` 
+       - Example: `net use X: \\localhost\c$\Users\abcd\Desktop\GTA /persistent:yes`
 10. Create the folder `X:\gta5` and copy all folders from `GTAVSP.7z\GTA V Source` into it
 11. Right click the folder `X:\gta5`, select "Properties", uncheck "Read-only", click Apply then OK
 12. Open Command Prompt as Administrator and run the following commands, then close:
@@ -95,13 +97,13 @@ setx /m RS_PROJECT gta5
 ```
 🖥️ X:
  ┗ 📂 gta5
-    ┣ 📂 3rdParty (OPTIONAL)
+    ┣ 📂 3rdParty - (OPTIONAL)
     ┣ 📂 src
     ┣ 📂 script
     ┗ 📂 tools_ng
 ```
 
-## Building The Game Binary
+## Building The Game Binary/Executable
 1. Run `X:\gta5\src\dev_ng\game\VS_Project\load_sln_unity_2012.bat`
 	- If prompted with "How do you want to open this file?", check "Always use this app to open .sln files" and Select **Visual Studio 2012** then click OK
 2. Once the solution loads, open the dropdown menu that says "Debug" at the top, select "Configuration Manager"
@@ -111,10 +113,10 @@ setx /m RS_PROJECT gta5
 6. Select `C/C++ > All options`, under "Look for options or switches", search "err" and set "Treat Warnings as Errors" to "No (/WX-)", then click "Apply" and "OK"
    - For faster compiles, search "mul" and set "Multiprocessor Compilation" to "Yes (/MP)"
       - If you get the error `C1060: Compiler is out of heap space` during build, come back to the above setting and turn it off
-7. Right-click the "game" project and select "Properties" and do step 5 again
+7. Right-click the "game" project and select "Properties" and do step 5,6 again
 8. Change build the type at the top of the window from "Debug" to "BankRelease"
-9. At the top of the window, select `Build > Build Solution` and wait for build to finish
-10. Copy output binary to game folder.
+10. At the top of the window, select `Build > Build Solution` and wait for build to finish
+11. Copy output binary to game folder.
 
 > [!WARNING]
 > Building shaders and scripts can be skipped using the [prebuilt files above](#prebuilt-files)<br>
@@ -211,5 +213,9 @@ rag
 ## BankRelease & Debug Controls
 
 [Almost Every Controls & Keys](/other/controls)
+
+# Final Thoughts
+
+Thanks for reading my precious tutorial, please consider starring or forking the repository if this helped u.
 
 <!-- Made with ❤️ by Smashtika(@yungDoom) -->
