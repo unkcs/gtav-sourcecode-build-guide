@@ -140,17 +140,19 @@ cd ..\..\tools_ng\bin\RageScriptEditor
 ragScriptEditor
 ```
 3. In the editor, select `File > Open Project` and open `X:\gta5\script\dev_ng\singleplayer\GTA5_SP.scproj`
-4. Select `Compiling > Intellibuild > Build Project`.
-5. After that, [You should check out this in order to make your own scripts to work.](#replacing-scriptrpf)
+4. Select `Compiling > Intellibuild > Build Project` and wait until the compiling process finishes.
+5. Run OpenIV, select "Windows" under "Grand Theft Auto V"
+6. Select the game folder and click "Continue"
+7. Open `<Game Directory>\update\update2.rpf\x64\levels\gta5\script`
+8. Delete `script.rpf`
+9. Click the "Edit mode" button, and copy `X:\gta5\titleupdate\dev_ng\x64\levels\gta5\script\script.rpf` to the OpenIV window.
 
 
 ## Patching Game Assets
 
-#### Placing update.rpf and update2.rpf
 1. Install ``update.rpf and update2.rpf from GTA V build 2699`` from [Prerequisites List](#prerequisites)
 2. Put `update.rpf` and `update2.rpf` files to `<Game Directory>\update\` folder
    * **Dont forget to backup your old files from update folder.**
-
 
 #### Modifying the RPF Files
 If you ever modify the RPF files, dont forget to encrpyt them.<br>
@@ -159,13 +161,6 @@ If you ever modify the RPF files, dont forget to encrpyt them.<br>
 2. Drag RPF file(s) onto `ArchiveFix.exe`
    * Don't drag the both files at the same time, **just drag one by one**, This will not work with that way.
 
-#### Replacing script.rpf
-**If u compiled the scripts and want to put it to the game, here you can follow this steps in order to make scripts work:**
-1. Run OpenIV, select "Windows" under "Grand Theft Auto V"
-2. Select the game folder and click "Continue"
-3. Open `<Game Directory>\update\update2.rpf\x64\levels\gta5\script`
-4. Delete `script.rpf`
-5. Click the "Edit mode" button, and copy `X:\gta5\titleupdate\dev_ng\x64\levels\gta5\script\script.rpf` to the OpenIV window.
 
 #### Prebuilt Stuff
 ##### Prebuilt Shaders
