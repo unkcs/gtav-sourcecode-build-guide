@@ -118,7 +118,7 @@ setx /m RS_PROJECT gta5
 > [!WARNING]
 > Building shaders can be skipped using the [prebuilt file above](#prebuilt-files).<br>
 > These steps are here to allow modding or for those who prefer to build from source as much as possible.<br>
-> If you prefer using prebuilt file, [here is all the instruction to make them work.](#placing-shader-folder-to-the-right-place)
+> If you prefer using prebuilt file, [here is all the instruction to make them work.](#placing-shaders-folder-to-the-right-place)
 
 ## Building Shaders
 1. Under "Shaders", right click the "shaders_rc" project and click "Build"
@@ -166,7 +166,7 @@ If you ever modify the RPF files, dont forget to encrpyt them.<br>
 4. Delete `script.rpf`
 5. Click the "Edit mode" button, and copy `X:\gta5\titleupdate\dev_ng\x64\levels\gta5\script\script.rpf` to the OpenIV window.
 
-#### Placing Shader Folder to the Right Place
+#### Placing Shaders Folder to the Right Place
 1. Go to game directory
 2. Put the `common` folder to the game directory.
 
