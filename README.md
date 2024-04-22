@@ -2,7 +2,7 @@
 
 ![Icon](/other/design/icon/icon.png)
 
-<h1 align=center>📜 -> GTA V Source Code Build Guide <- 📜</h1>
+<h1 align=center>📜 --> GTA V Source Code Build Guide <-- 📜</h1>
  
 🖥️ *Working Status of Tools and Game:* [See Here](/workingstatus.md)<br>
 🔨 *Known Bugs, Errors and Issues:* [See Here](/knownissues.md)
