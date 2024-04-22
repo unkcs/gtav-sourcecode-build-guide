@@ -42,16 +42,15 @@
  - (OPTIONAL) [3rdParty Folder](https://mega.nz/file/SqojFJZL#eYINo1pnspuTvdbocz4cA7NYZA8BN2H2nm7YEXuzlFw)
  - (OPTIONAL) [gIKgDXuVHNzIgXkiwpB.zip - Art Asset Leak](https://big.fileditchnew.ch/b9/gIKgDXuVHNzIgXkiwpB.zip)
 
-## Prebuilt Files
+- ## Prebuilt File(s)
  - [Shaders](https://github.com/WH0LEWHALE/gtav-sourcecode-build-guide/files/14649717/common.zip)
- - [Scripts](https://drive.google.com/file/d/1AVMC_MBPpqKp0BIrOI-_lLq98QmwRn46/view)
 
 ___
 
 > [!NOTE]
 > It is recommended to create a virtual machine for this build process, Although the build process can be done on your Real PC.<br>
 > It's not recommended on your Real PC because sometimes the conflicts may happen and broke the whole compilation process.<br>
-> **VMWare/Hyper-V are recommended to run the Virtual Machine due to their performance. VirtualBox will probably work too.**
+> **VMWare/Hyper-V are recommended to run the Virtual Machine due to their performance.<br>VirtualBox will probably work too.**
 
 ## Prerequisites Setup
 1. Install DirectX SDK June 2010
@@ -64,19 +63,19 @@ ___
       1. Hold Shift and right click the `incredibuild4_0.exe` file, select "Copy as path"
       2. Open Command Prompt as Administrator
       3. Paste the path and press Enter
-   - Select to install "Incredibuild Agent", "Incredibuild Coordinator", and the extension for Visual Studio.
+   - Select to install "Incredibuild Agent", "Incredibuild Coordinator", and the extension for Visual Studio
 6. Install OpenIV
 7. Install [DLL Patches and Rush Patches](#miscellaneous)
 8. (OPTIONAL) Install 3D Studio Max 2010 SDK
 9. Create X:\ Drive by following the steps at the bottom:
     1. Open Command Prompt
-    2. Create a new folder called "GTA" to the Desktop or anywhere that you want.
+    2. Create a new folder called "GTA" to the Desktop or anywhere that you want
     3. Run `net use X: \\localhost\c$\<Path to working folder for build> /persistent:yes`
        - Example: `net use X: \\localhost\c$\Users\abcd\Desktop\GTA /persistent:yes` 
 10. Create the folder `X:\gta5` and copy all folders from `GTAVSP.7z\GTA V Source` into it
-11. Right click the folder `X:\gta5`, select "Properties", uncheck "Read-only", click Apply then OK.
-12. Copy all folders in `dll_patches_x.zip` to `X:\gta5\tools_ng\bin`, make sure to overwrite when copying.
-13. (OPTIONAL) Install 3rdParty Folder, Extract and Put the folder to `X:\gta5\`.
+11. Right click the folder `X:\gta5`, select "Properties", uncheck "Read-only", click Apply then OK
+12. Copy all folders in `dll_patches_x.zip` to `X:\gta5\tools_ng\bin`, make sure to overwrite when copying
+13. (OPTIONAL) Install 3rdParty Folder, Extract and Put the folder to `X:\gta5\`
 14. Open Command Prompt as Administrator and run the following commands, then close:
 ```batch
 setx /m RS_TOOLSROOT X:\gta5\tools_ng
@@ -86,7 +85,7 @@ setx /m RS_PROJECT gta5
 ```
 15. To ensure changes are finalized, restart build machine/computer.
 
-**By the end, Your Folder Structure should look like this:**
+**By far, Your Folder Structure should look like this:**
 ```
 🖥️ X:
  ┗ 📂 gta5
@@ -98,35 +97,36 @@ setx /m RS_PROJECT gta5
 
 ## Patching The Source Code
 1. Open `rush_patches-master.zip`
-2. Copy `game` and `rage` folders to `X:\gta5\src\dev_ng`, make sure to overwrite when copying.
+2. Copy `game` and `rage` folders to `X:\gta5\src\dev_ng`, make sure to overwrite when copying
 3. (OPTIONAL) To skip launcher requirement for running the game, copy `game` and `rage` folders from `rush_patches-master.zip\OPTIONAL_FIXES` to the same folder.
 
 ## Building The Game Binary
 1. Run `X:\gta5\src\dev_ng\game\VS_Project\load_sln_unity_2012.bat`
-	- If prompted with "How do you want to open this file?", check "Always use this app to open .sln files" and Select **Visual Studio 2012** then click OK.
+	- If prompted with "How do you want to open this file?", check "Always use this app to open .sln files" and Select **Visual Studio 2012** then click OK
 2. Once the solution loads, open the dropdown menu that says "Debug" at the top, select "Configuration Manager"
-3. Change "Active Solution Platform" to "x64" and close the configuration window.
-4. Hold Ctrl key and click all projects under "GameLibs" and "Rage" folder, right-click and select "Properties".
-5. In the "Configuration" dropdown, select "All Configurations".
-6. Select `C/C++ > All options`, under "Look for options or switches", search "err" and set "Treat Warnings as Errors" to "No (/WX-)", then click "Apply" and "OK".
+3. Change "Active Solution Platform" to "x64" and close the configuration window
+4. Hold Ctrl key and click all projects under "GameLibs" and "Rage" folder, right-click and select "Properties"
+5. In the "Configuration" dropdown, select "All Configurations"
+6. Select `C/C++ > All options`, under "Look for options or switches", search "err" and set "Treat Warnings as Errors" to "No (/WX-)", then click "Apply" and "OK"
    - For faster compiles, search "mul" and set "Multiprocessor Compilation" to "Yes (/MP)"
-      - If you get the error `C1060: Compiler is out of heap space` during build, come back to the above setting and turn it off.
-7. Right-click the "game" project and select "Properties" and do step 5 again.
-8. Change build the type at the top of the window from "Debug" to "BankRelease".
-9. At the top of the window, select `Build > Build Solution` and wait for build to finish.
+      - If you get the error `C1060: Compiler is out of heap space` during build, come back to the above setting and turn it off
+7. Right-click the "game" project and select "Properties" and do step 5 again
+8. Change build the type at the top of the window from "Debug" to "BankRelease"
+9. At the top of the window, select `Build > Build Solution` and wait for build to finish
 10. Copy output binary to game folder.
 
 > [!WARNING]
-> Building shaders and scripts can be skipped using the [prebuilt files above](#prebuilt-files).<br>
-> These steps are here to allow modding or for those who prefer to build from source as much as possible.
+> Building shaders can be skipped using the [prebuilt file above](#prebuilt-files).<br>
+> These steps are here to allow modding or for those who prefer to build from source as much as possible.<br>
+> If you prefer using prebuilt file, [here is all the instruction to make them work.](#placing-shader-folder-to-the-right-place)
 
 ## Building Shaders
 1. Under "Shaders", right click the "shaders_rc" project and click "Build"
 2. (OPTIONAL) Build low quality shaders
    1. Right click the "shaders_rc" project and click "Properties"
    2. Select `Configuration Properties > NMake`
-   3. Under "General", change all command lines from ending with `win32_40.bat` to ending with `win32_40_lq.bat`, then click "Apply" and "OK".
-   4. Rebuild shaders and wait it to finish.
+   3. Under "General", change all command lines from ending with `win32_40.bat` to ending with `win32_40_lq.bat`, then click "Apply" and "OK"
+   4. Rebuild shaders and wait it to finish
 3. Copy `X:\gta5\titleupdate\dev_ng\common` to game directory.
 
 ## Building Game Scripts
@@ -140,6 +140,7 @@ ragScriptEditor
 ```
 3. In the editor, select `File > Open Project` and open `X:\gta5\script\dev_ng\singleplayer\GTA5_SP.scproj`.
 4. Select `Compiling > Intellibuild > Build Project`.
+5. After that, [You should check out this in order to make your own scripts to work.](#replacing-script.rpf)
 
 
 ## Patching Game Assets
@@ -152,20 +153,22 @@ ragScriptEditor
 
 #### Modifying the RPF Files
 If you ever modify the RPF files, dont forget to encrpyt them.<br>
-Here you can see how to do it:
-
+**Here you can see how to do it:**
 1. From `rush_patches-master.zip`, copy all files in the `ARCHIVEFIX` folder to a separate location
 2. Drag RPF file(s) onto `ArchiveFix.exe`
    * Don't drag the both files at the same time, **just drag one by one**, This will not work with that way.
 
 #### Replacing script.rpf
-If did you compiled the scripts and want to put it to the game, here you can follow this steps in order to make scripts work:
-
-1. Run OpenIV, select "Windows"
+**If did you compiled the scripts and want to put it to the game, here you can follow this steps in order to make scripts work:**
+1. Run OpenIV, select "Windows" under "Grand Theft Auto V"
 2. Select the game folder and click "Continue"
 3. Open `<Game Directory>\update\update2.rpf\x64\levels\gta5\script`
 4. Delete `script.rpf`
 5. Click the "Edit mode" button, and copy `X:\gta5\titleupdate\dev_ng\x64\levels\gta5\script\script.rpf` to the OpenIV window.
+
+#### Placing Shader Folder to the Right Place
+1. Go to game directory
+2. Put the `common` folder to the game directory.
 
 <!-- This can be skipped because i already included everything in the update.rpf and update2.rpf.
 
