@@ -117,8 +117,8 @@ setx /m RS_PROJECT gta5
 10. Copy output binary to game folder.
 
 > [!WARNING]
-> Building shaders and scripts can be skipped using the [prebuilt files above](#prebuilt-files).<br>
-> These steps are here to allow modding or for those who prefer to build from source as much as possible.<br>
+> Building shaders and scripts can be skipped using the [prebuilt files above](#prebuilt-files)<br>
+> These steps are here to allow modding or for those who prefer to build from source as much as possible<br>
 > If you prefer using prebuilt files, [here is all the instruction to make them work.](#prebuilt-stuff)
 
 ## Building Shaders
@@ -139,16 +139,16 @@ setenv
 cd ..\..\tools_ng\bin\RageScriptEditor
 ragScriptEditor
 ```
-3. In the editor, select `File > Open Project` and open `X:\gta5\script\dev_ng\singleplayer\GTA5_SP.scproj`.
+3. In the editor, select `File > Open Project` and open `X:\gta5\script\dev_ng\singleplayer\GTA5_SP.scproj`
 4. Select `Compiling > Intellibuild > Build Project`.
 5. After that, [You should check out this in order to make your own scripts to work.](#replacing-scriptrpf)
 
 
 ## Patching Game Assets
 
-#### Putting update.rpf and update2.rpf
+#### Placing update.rpf and update2.rpf
 1. Install ``update.rpf and update2.rpf from GTA V build 2699`` from [Prerequisites List](#prerequisites)
-2. Put `update.rpf` and `update2.rpf` files to `<Game Directory>\update\` folder.
+2. Put `update.rpf` and `update2.rpf` files to `<Game Directory>\update\` folder
    * **Dont forget to backup your old files from update folder.**
 
 
@@ -160,7 +160,7 @@ If you ever modify the RPF files, dont forget to encrpyt them.<br>
    * Don't drag the both files at the same time, **just drag one by one**, This will not work with that way.
 
 #### Replacing script.rpf
-**If did you compiled the scripts and want to put it to the game, here you can follow this steps in order to make scripts work:**
+**If u compiled the scripts and want to put it to the game, here you can follow this steps in order to make scripts work:**
 1. Run OpenIV, select "Windows" under "Grand Theft Auto V"
 2. Select the game folder and click "Continue"
 3. Open `<Game Directory>\update\update2.rpf\x64\levels\gta5\script`
