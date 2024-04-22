@@ -23,9 +23,6 @@ To do this, Follow this steps:
 **E:** Couldn't connect to RAG.exe. Keep trying?<br>
 **F:** Just Simply Open the RAG Manually, then start **launch.bat**.
 
-**E:** Couldn't connect to RAG.exe. Keep trying?<br>
-**F:** Just Simply Open the RAG Manually, then start **launch.bat**.
-
 **E:** Fatal Error: Fatal disc error (code -*)<br>
 **F:** You are %100 missing some files or misdragged something, fix your game files.
 
