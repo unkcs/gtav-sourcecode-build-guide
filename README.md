@@ -1,8 +1,8 @@
 <!-- Made with ❤️ by Smashtika(@yungDoom) -->
 
-![Icon](/other/design/iconv2.2/iconv2.2.png)
+![Icon](/other/design/icon/icon.png)
 
-# 📜 GTA V Source Code Build Guide V2.2
+# 📜 GTA V Source Code Build Guide
  
 🖥️ **Working Status of Tools and Game:** [See Here](/workingstatus.md)<br>
 🔨 **Known Bugs, Errors and Issues:** [See Here](/knownissues.md)
@@ -49,9 +49,9 @@
 ___
 
 > [!NOTE]
-> It is recommended to create a virtual machine for this build process, Although the build process can be done on your Real PC.<br>
-> It's not recommended on your Real PC because sometimes the conflicts may happen and broke the whole compilation process.<br>
-> **VMWare/Hyper-V are recommended to run the Virtual Machine due to their performance.<br>VirtualBox will probably work too.**
+> It is recommended to create a virtual machine for this build process, Although the build process can be done on your Real PC<br>
+> It's not recommended on your Real PC because sometimes the conflicts may happen and broke the whole compilation process<br>
+> **VMWare/Hyper-V are recommended to run the Virtual Machine due to their performance.**
 
 ## Prerequisites Setup
 1. Install DirectX SDK June 2010
