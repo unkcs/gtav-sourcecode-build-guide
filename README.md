@@ -43,8 +43,8 @@
  - (OPTIONAL) [gIKgDXuVHNzIgXkiwpB.zip - Art Asset Leak](https://big.fileditchnew.ch/b9/gIKgDXuVHNzIgXkiwpB.zip)
 
 ## Prebuilt Files
- - [Shaders](https://github.com/WH0LEWHALE/gtav-sourcecode-build-guide/files/14649717/common.zip)
- - Scripts (Already included, [You can build your own scripts and put them without any problem.](#building-game-scripts))
+ - [Shaders](https://github.com/WH0LEWHALE/gtav-sourcecode-build-guide/files/14649717/common.zip) ([You can build your own shaders and play with them without any problem.](#building-shaders))
+ - Scripts (Already included, [You can build your own scripts and play with them without any problem.](#building-game-scripts))
 
 ___
 
@@ -75,16 +75,14 @@ ___
        - Example: `net use X: \\localhost\c$\Users\abcd\Desktop\GTA /persistent:yes` 
 10. Create the folder `X:\gta5` and copy all folders from `GTAVSP.7z\GTA V Source` into it
 11. Right click the folder `X:\gta5`, select "Properties", uncheck "Read-only", click Apply then OK
-12. Copy all folders in `dll_patches_x.zip` to `X:\gta5\tools_ng\bin`, make sure to overwrite when copying
-13. (OPTIONAL) Install 3rdParty Folder, Extract and Put the folder to `X:\gta5\`
-14. Open Command Prompt as Administrator and run the following commands, then close:
+12. Open Command Prompt as Administrator and run the following commands, then close:
 ```batch
 setx /m RS_TOOLSROOT X:\gta5\tools_ng
 setx /m DXSDK_DIR "C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)"
 setx /m RS_CODEBRANCH X:\gta5\src\dev_ng
 setx /m RS_PROJECT gta5
 ```
-15. To ensure changes are finalized, restart build machine/computer.
+13. To ensure changes are finalized, restart build machine/computer.
 
 **By far, Your Folder Structure should look like this:**
 ```
@@ -99,7 +97,9 @@ setx /m RS_PROJECT gta5
 ## Patching The Source Code
 1. Open `rush_patches-master.zip`
 2. Copy `game` and `rage` folders to `X:\gta5\src\dev_ng`, make sure to overwrite when copying
-3. (OPTIONAL) To skip launcher requirement for running the game, copy `game` and `rage` folders from `rush_patches-master.zip\OPTIONAL_FIXES` to the same folder.
+3. (OPTIONAL) To skip launcher requirement for running the game, copy `game` and `rage` folders from `rush_patches-master.zip\OPTIONAL_FIXES` to the same folder
+4. Copy all folders in `dll_patches_x.zip` to `X:\gta5\tools_ng\bin`, make sure to overwrite when copying
+5. (OPTIONAL) Install 3rdParty Folder, Extract and Put the folder to `X:\gta5\`.
 
 ## Building The Game Binary
 1. Run `X:\gta5\src\dev_ng\game\VS_Project\load_sln_unity_2012.bat`
