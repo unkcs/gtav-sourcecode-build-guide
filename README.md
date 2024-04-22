@@ -84,6 +84,13 @@ setx /m RS_PROJECT gta5
 ```
 13. To ensure changes are finalized, restart build machine/computer.
 
+## Patching The Source Code
+1. Open `rush_patches-master.zip`
+2. Copy `game` and `rage` folders to `X:\gta5\src\dev_ng`, make sure to overwrite when copying
+3. (OPTIONAL) To skip launcher requirement for running the game, copy `game` and `rage` folders from `rush_patches-master.zip\OPTIONAL_FIXES` to the same folder
+4. Copy all folders in `dll_patches_x.zip` to `X:\gta5\tools_ng\bin`, make sure to overwrite when copying
+5. (OPTIONAL) Install 3rdParty Folder, Extract and Put the folder to `X:\gta5\`.
+
 **By far, Your Folder Structure should look like this:**
 ```
 🖥️ X:
@@ -93,13 +100,6 @@ setx /m RS_PROJECT gta5
     ┣ 📂 script
     ┗ 📂 tools_ng
 ```
-
-## Patching The Source Code
-1. Open `rush_patches-master.zip`
-2. Copy `game` and `rage` folders to `X:\gta5\src\dev_ng`, make sure to overwrite when copying
-3. (OPTIONAL) To skip launcher requirement for running the game, copy `game` and `rage` folders from `rush_patches-master.zip\OPTIONAL_FIXES` to the same folder
-4. Copy all folders in `dll_patches_x.zip` to `X:\gta5\tools_ng\bin`, make sure to overwrite when copying
-5. (OPTIONAL) Install 3rdParty Folder, Extract and Put the folder to `X:\gta5\`.
 
 ## Building The Game Binary
 1. Run `X:\gta5\src\dev_ng\game\VS_Project\load_sln_unity_2012.bat`
