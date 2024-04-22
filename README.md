@@ -41,6 +41,7 @@
  - [DLL Patches](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/files/14965810/dll_patches_x.zip)
  - (OPTIONAL) [3rdParty Folder](https://mega.nz/file/SqojFJZL#eYINo1pnspuTvdbocz4cA7NYZA8BN2H2nm7YEXuzlFw)
  - (OPTIONAL) [gIKgDXuVHNzIgXkiwpB.zip - Art Asset Leak](https://big.fileditchnew.ch/b9/gIKgDXuVHNzIgXkiwpB.zip)
+    - [Mirror Link](https://www.bojarcz.uk/gIKgDXuVHNzIgXkiwpB.zip), Thanks to [@RockstarAdvancedGameEngine](https://github.com/RockstarAdvancedGameEngine).
  - (OPTIONAL & NOT STABLE) [Visual Studio 2022 Patches](https://small.fileditchstuff.me/s10/VBlSfKBylNQplMIPLL.zip)
     - Presented by [@userTermzik](https://github.com/userTermzik), but i don't recommend this because it needs some fixes. 
 
