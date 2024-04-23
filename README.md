@@ -12,6 +12,27 @@
 
 📩 *You can contact me from discord: yungdoomofficial*
 
+# Contents
+1. [Prerequisites](#prerequisites)
+   1. [Base](#base)
+   2. [Dependencies](#dependencies)
+   3. [Miscellaneous](#miscellaneous)
+   4. [Prebuilt Files](#prebuilt-files)
+2. [Prerequisites Setup](#prerequisites-setup)
+3. [Patching The Source Code](#patching-the-source-code)
+5. [Building The Game Binary/Executable](#building-the-game-binaryexecutable)
+6. [Building Shaders](#building-shaders)
+7. [Building Game Scripts](#building-game-scripts)
+8. [Patching Game Assets](#patching-game-assets)
+   1. [Modifying the RPF Files](#modifying-the-rpf-files)
+   2. [Prebuilt Stuff](#prebuilt-stuff)
+      1. [Prebuilt Shaders](#prebuilt-shaders)
+      2. [Prebuilt Game Scripts](#prebuilt-game-scripts)
+9. [Running The Game](#running-the-game)
+10. [BankRelease & Debug Controls](#bankrelease--debug-controls)
+11. [Final Thoughts](#final-thoughts)
+
+
 ## Prerequisites
 ### Base
  - Windows 10/11
@@ -49,7 +70,7 @@
 
 ## Prebuilt Files
  - [Shaders](https://github.com/WH0LEWHALE/gtav-sourcecode-build-guide/files/14649717/common.zip) ([You can build your own shaders and play with them without any problem.](#building-shaders))
- - Scripts (Already included, [You can build your own scripts and play with them without any problem.](#building-game-scripts))
+ - Game Scripts (Already included, [You can build your own scripts and play with them without any problem.](#building-game-scripts))
 
 ___
 
@@ -60,11 +81,12 @@ ___
 
 ## Prerequisites Setup
 1. Install DirectX SDK June 2010
+   - **If you get error S1023, Uninstall `Visual C++ 2010 Redistributable` & Reinstall DirectX SDK - (June 2010).**
 2. Install 7-Zip
 3. Install Visual Studio 2012
    - Uncheck all optional components in the installer **except "Microsoft Foundation Classes for C++"** to save space, none of them are needed for the build.
 4. Install Update 4 for Visual Studio 2012
-5. Install Incredibuild 4.0 (Only needed for compiling shaders and scripts)
+5. Install Incredibuild 4.0 (Only needed for compiling shaders and game scripts)
    - If you encounter the error that the installer is "Blocked by your administrator", follow these steps:
       1. Hold Shift and right click the `incredibuild4_0.exe` file, select "Copy as path"
       2. Open Command Prompt as Administrator
@@ -87,7 +109,11 @@ setx /m DXSDK_DIR "C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)"
 setx /m RS_CODEBRANCH X:\gta5\src\dev_ng
 setx /m RS_PROJECT gta5
 ```
-13. To ensure changes are finalized, restart build machine/computer.
+13. (OPTIONAL) Symlink the `X:\gta5\titleupdate\dev_ng` directory.
+    - This can be done with this CMD Command: `mklink /D /J "X:\gta5\titleupdate\dev_ng" "INSERT_RETAIL_COPY_HERE"`.
+      **(``INSERT_RETAIL_COPY_HERE`` being your GTA V Game Directory)**
+14. If you dont want to symlink, Put all the game files to the `X:\gta5\titleupdate\dev_ng` directory.
+15. To ensure changes are finalized, restart build machine/computer.
 
 ## Patching The Source Code
 1. Open `rush_patches-master.zip`
@@ -122,7 +148,7 @@ setx /m RS_PROJECT gta5
 11. Copy output binary to game folder.
 
 > [!WARNING]
-> Building shaders and scripts can be skipped using the [prebuilt files above](#prebuilt-files)<br>
+> Building shaders and game scripts can be skipped using the [prebuilt files above](#prebuilt-files)<br>
 > These steps are here to allow modding or for those who prefer to build from source as much as possible<br>
 > If you prefer using prebuilt files, [here is all the instruction to make them work.](#prebuilt-stuff)
 
@@ -171,7 +197,7 @@ If you ever modify the RPF files, dont forget to encrpyt them.<br>
 ##### Prebuilt Shaders
 1. Go to game directory
 2. Put the `common` folder to the game directory.
-##### Prebuilt Scripts
+##### Prebuilt Game Scripts
 * Scripts Already included in update2.rpf, you can replace it in future with one that you builded it.
 
 ## Running The Game
