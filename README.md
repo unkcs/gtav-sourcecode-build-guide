@@ -44,7 +44,7 @@
     - Archive Password: `Mi76#b>9mRed`
    - You can verify the authenticity of the file by its SHA1 hash: `ca39323730ed644fa534a2946506d4287f92a799`
      - To verify with 7-Zip, right click the file and select `7-Zip > CRC SHA > SHA1`
- - [update.rpf and update2.rpf from GTA V build 2699](https://mega.nz/file/amY3Ra7D#WqiIaUV6W34JXqp21tmfZHTD8HSvoPmDjWktPMQcr0k)
+ - [update.rpf and update2.rpf from GTA V build 2699](https://mega.nz/file/72plXYpY#B9A3vDidqPUVhfXDP5hWCS8lc90lcdGZsGfjuWkBDe8)
  - Some Patience and Technical Competence
 
 ### Dependencies
