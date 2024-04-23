@@ -29,5 +29,5 @@ To do this, Follow this steps:
 # Known Issues
 * Game crashes if you open "Keybinds" Menu in BankRelease or Debug Builds.
   * It's because the game tries to load a missing keyboard layout file.
-    * This can be fixed by just editing some lines in the source code.
+    * This can probably be fixed by just editing some lines in the source code.
   
