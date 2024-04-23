@@ -192,7 +192,7 @@ If you ever modify the RPF files, dont forget to encrpyt them.<br>
 **Here you can see how to do it:**
 1. From `rush_patches-master.zip`, copy all files in the `ARCHIVEFIX` folder to a separate location
 2. Drag RPF file(s) onto `ArchiveFix.exe`
-   * Don't drag the both files at the same time, **just drag one by one**, This will not work with that way.
+   * Don't drag the both files at the same time, **just drag one by one**.
 
 
 #### Prebuilt Stuff
