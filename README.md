@@ -4,7 +4,7 @@
 
 <h1 align=center>📜 --> GTA V Source Code Build Guide <-- 📜</h1>
  
-🖥️ *Working Status of Tools and Game:* [See Here](/workingstatus.md)<br>
+🖥️ *Working Status of the Tools and Game:* [See Here](/workingstatus.md)<br>
 🔨 *Known Bugs, Errors and Issues:* [See Here](/knownissues.md)
 
 ⚠️ *If you having any problem, let us know in the ["Issues"](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/issues) section of this repository!*<br>
