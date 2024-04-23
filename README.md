@@ -128,7 +128,9 @@ setx /m RS_PROJECT gta5
  ┗ 📂 gta5
     ┣ 📂 3rdParty - (OPTIONAL)
     ┣ 📂 src
+    ┃ ┣ 📂 dev_ng
     ┣ 📂 script
+    ┃ ┣ 📂 dev_ng 
     ┗ 📂 tools_ng
 ```
 
