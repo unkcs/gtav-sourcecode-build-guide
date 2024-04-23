@@ -10,6 +10,8 @@
 ⚠️ *If you having any problem, let us know in the ["Issues"](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/issues) section of this repository!*<br>
 💬 *You can check out ["Discussions"](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/discussions) for talking and discuss.*
 
+📩 *You can contact me from discord: yungdoomofficial*
+
 ## Prerequisites
 ### Base
  - Windows 10/11
