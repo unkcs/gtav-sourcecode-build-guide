@@ -8,8 +8,7 @@
 
 ## Main
 - [x] Game
-  - [ ] Script Hook V and ASI Loaders in BankRelease and Debug Builds
-    - I didn't tested these in the Final Build, so maybe it'll work in Final Build.
+  - [ ] Script Hook V and ASI Loaders
 - [x] Tools
   - [x] Rage Script Editor
   - [x] Rag
