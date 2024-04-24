@@ -237,6 +237,4 @@ rag
 Thanks for reading my precious tutorial, please consider starring or forking the repository if this helped u<br>
 **Feel free to contribute the repository, you'll be welcomed if you dont make stupid thingies.**
 
-You can see [credits.md](/credits.md) for more information about everyone that contributed to this repository.
-
 <!-- Made with ❤️ by Smashtika(@yungDoom) -->
