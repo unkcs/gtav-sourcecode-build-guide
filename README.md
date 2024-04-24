@@ -110,7 +110,7 @@ setx /m RS_CODEBRANCH X:\gta5\src\dev_ng
 setx /m RS_PROJECT gta5
 ```
 13. (OPTIONAL) Symlink the `X:\gta5\titleupdate\dev_ng` directory.
-    - This can be done with this CMD Command: `mklink /D /J "X:\gta5\titleupdate\dev_ng" "INSERT_RETAIL_COPY_HERE"`.<br>
+    - This can be done with this CMD Command: `mklink /D /J "X:\gta5\titleupdate\dev_ng" "INSERT_RETAIL_COPY_HERE"`.<br><br>
       **(``INSERT_RETAIL_COPY_HERE`` being your GTA V Game Directory)**
 14. If you dont want to symlink, Put all the game files to the `X:\gta5\titleupdate\dev_ng` directory.
 15. To ensure changes are finalized, restart build machine/computer.
