@@ -64,9 +64,9 @@
  - [DLL Patches](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/files/14965810/dll_patches_x.zip)
  - (OPTIONAL) [3rdParty Folder](https://mega.nz/file/SqojFJZL#eYINo1pnspuTvdbocz4cA7NYZA8BN2H2nm7YEXuzlFw)
  - (OPTIONAL) [gIKgDXuVHNzIgXkiwpB.zip - Art Asset Leak](https://big.fileditchnew.ch/b9/gIKgDXuVHNzIgXkiwpB.zip)
-    - [Mirror Link](https://www.bojarcz.uk/gIKgDXuVHNzIgXkiwpB.zip), Thanks to [@RockstarAdvancedGameEngine](https://github.com/RockstarAdvancedGameEngine).
+    - [Mirror Link](https://www.bojarcz.uk/gIKgDXuVHNzIgXkiwpB.zip)
  - (OPTIONAL & NOT STABLE) [Visual Studio 2022 Patches](https://small.fileditchstuff.me/s10/VBlSfKBylNQplMIPLL.zip)
-    - Presented by [@userTermzik](https://github.com/userTermzik), but i don't recommend this because it needs some modifications. 
+    - I don't recommend this because it needs some modifications. 
 
 ## Prebuilt Files
  - [Shaders](https://github.com/WH0LEWHALE/gtav-sourcecode-build-guide/files/14649717/common.zip) ([You can build your own shaders and play with them without any problem.](#building-shaders))
@@ -236,5 +236,7 @@ rag
 
 Thanks for reading my precious tutorial, please consider starring or forking the repository if this helped u<br>
 **Feel free to contribute the repository, you'll be welcomed if you dont make stupid thingies.**
+
+You can see [credits.md](/credits.md) for more information about everyone that contributed to this repository.
 
 <!-- Made with ❤️ by Smashtika(@yungDoom) -->
