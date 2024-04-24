@@ -240,7 +240,4 @@ rag
 Thanks for reading my precious tutorial, please consider starring or forking the repository if this helped u<br>
 **Feel free to contribute the repository, you'll be welcomed if you dont make stupid thingies.**
 
-
-https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/assets/146978592/b015be29-0414-4d7f-bf9f-154873a8a9e2
-
 <!-- Made with ❤️ by Smashtika(@yungDoom) -->
