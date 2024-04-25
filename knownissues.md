@@ -24,7 +24,7 @@ To do this, Follow this steps:
 **F:** Just Simply Open the RAG Manually, then start **launch.bat**.
 
 **E:** Fatal Error: Fatal disc error (code -*)<br>
-**F:** You are %100 missing some files or misdragged something, fix your game files.
+**F:** You are %100 missing some files,misdragged something or you have corrupted game files.
 
 # Known Issues
 * Game crashes if you open "Keybinds" Menu in BankRelease or Debug Builds.
