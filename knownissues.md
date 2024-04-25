@@ -27,7 +27,7 @@ To do this, Follow this steps:
 **F:** You are %100 missing some files,misdragged something or you have corrupted game files.
 
 # Known Issues
-* Game crashes if you open "Keybinds" Menu in BankRelease or Debug Builds.
-  * It's because the game tries to load a missing keyboard layout file.
+* Game crashes if you open "Keybinds" Menu in *BankRelease* or *Debug* Builds.
+  * It's because the game tries to load a missing debug keyboard layout file.
     * This can probably be fixed by just editing some lines in the source code.
   
