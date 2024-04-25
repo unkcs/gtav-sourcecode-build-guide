@@ -105,12 +105,11 @@ setx /m DXSDK_DIR "C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)"
 setx /m RS_CODEBRANCH X:\gta5\src\dev_ng
 setx /m RS_PROJECT gta5
 ```
-13. (OPTIONAL) Symlink the `X:\gta5\titleupdate\dev_ng` directory
-    - This can be done with this CMD Command:
-    ```batch
-    mklink /D /J "X:\gta5\titleupdate\dev_ng" "INSERT_RETAIL_COPY_HERE"
-    ```
-    - ``INSERT_RETAIL_COPY_HERE`` is being your GTA V Game Directory
+13. (OPTIONAL) Symlink the `X:\gta5\titleupdate\dev_ng` directory by just typing this to the Command Prompt:
+```batch
+mklink /D /J "X:\gta5\titleupdate\dev_ng" "INSERT_RETAIL_COPY_HERE"
+ ```
+   - ``INSERT_RETAIL_COPY_HERE`` is being your GTA V Game Directory
 14. If you dont want to symlink, Put all the game files to the `X:\gta5\titleupdate\dev_ng` directory
 15. To ensure changes are finalized, restart build machine/computer.
 
