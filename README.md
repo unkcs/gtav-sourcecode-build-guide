@@ -2,7 +2,7 @@
 
 ![Icon](/other/design/icon/icon.png)
 
-<h1 align=center>📜 --> GTA V Source Code Build Guide <-- 📜</h1>
+<h1 align="left">📜 GTA V Source Code Build Guide</h1>
  
 🖥️ *Working Status of the Tools and Game:* [See Here](/workingstatus.md)<br>
 🔨 *Known Bugs, Errors and Issues:* [See Here](/knownissues.md)
@@ -17,7 +17,7 @@
    1. [Base](#base)
    2. [Dependencies](#dependencies)
    3. [Miscellaneous](#miscellaneous)
-2. [Prebuilt Files](#prebuilt-files)
+2. [Prebuilt File](#prebuilt-file)
 3. [Prerequisites Setup](#prerequisites-setup)
 4. [Patching The Source Code](#patching-the-source-code)
 5. [Building The Game Binary/Executable](#building-the-game-binaryexecutable)
@@ -27,7 +27,6 @@
    1. [Modifying the RPF Files](#modifying-the-rpf-files)
    2. [Prebuilt Stuff](#prebuilt-stuff)
       1. [Prebuilt Shaders](#prebuilt-shaders)
-      2. [Prebuilt Game Scripts](#prebuilt-game-scripts)
 9. [Running The Game](#running-the-game)
 10. [BankRelease & Debug Controls](#bankrelease--debug-controls)
 11. [Final Thoughts](#final-thoughts)
@@ -65,19 +64,16 @@
  - (OPTIONAL) [3rdParty Folder](https://mega.nz/file/SqojFJZL#eYINo1pnspuTvdbocz4cA7NYZA8BN2H2nm7YEXuzlFw)
  - (OPTIONAL) [gIKgDXuVHNzIgXkiwpB.zip - Art Asset Leak](https://big.fileditchnew.ch/b9/gIKgDXuVHNzIgXkiwpB.zip)
     - [Mirror Link](https://www.bojarcz.uk/gIKgDXuVHNzIgXkiwpB.zip)
- - (OPTIONAL & NOT STABLE) [Visual Studio 2022 Patches](https://small.fileditchstuff.me/s10/VBlSfKBylNQplMIPLL.zip)
-    - I don't recommend this because it needs some modifications. 
 
-## Prebuilt Files
+## Prebuilt File(s)
  - [Shaders](https://github.com/WH0LEWHALE/gtav-sourcecode-build-guide/files/14649717/common.zip) ([You can build your own shaders and play with them without any problem.](#building-shaders))
- - Game Scripts (Already included, [You can build your own scripts and play with them without any problem.](#building-game-scripts))
 
 ___
 
 > [!NOTE]
-> It is recommended to create a virtual machine for this build process, Although the build process can be done on your Real PC<br>
-> It's not recommended on your Real PC because sometimes the conflicts may happen and broke the whole compilation process<br>
-> **VMWare/Hyper-V are recommended to run the Virtual Machine due to their performance.**
+> It is recommended to create a virtual machine for this build process, Although the build process can be done on your Real PC too!<br>
+> in Windows, **VMWare/Hyper-V or VirtualBox are recommended to run the Virtual Machine due to their performance.**<br>
+> in Linux, **virt-manager** are recommended to run the Virtual Machine.
 
 ## Prerequisites Setup
 1. Install DirectX SDK June 2010
@@ -153,9 +149,9 @@ setx /m RS_PROJECT gta5
 11. Copy output binary to game folder.
 
 > [!WARNING]
-> Building shaders and game scripts can be skipped using the [prebuilt files above](#prebuilt-files)<br>
+> Building shaders can be skipped using the [prebuilt file above](#prebuilt-file)<br>
 > These steps are here to allow modding or for those who prefer to build from source as much as possible<br>
-> If you prefer using prebuilt files, [here is all the instruction to make them work.](#prebuilt-stuff)
+> If you prefer using prebuilt file, [here is all the instruction to make it work.](#prebuilt-stuff)
 
 ## Building Shaders
 1. Under "Shaders", right click the "shaders_rc" project and click "Build"
@@ -176,7 +172,7 @@ cd ..\..\tools_ng\bin\RageScriptEditor
 ragScriptEditor
 ```
 3. In the editor, select `File > Open Project` and open `X:\gta5\script\dev_ng\singleplayer\GTA5_SP.scproj`
-4. Select `Compiling > Intellibuild > Build Project` and wait until the compiling process finishes.
+4. Select `Compiling > Intellibuild > Build Project` and wait until the compiling process finishes
 5. Run OpenIV, select "Windows" under "Grand Theft Auto V"
 6. Select the game folder and click "Continue"
 7. Open `<Game Directory>\update\update2.rpf\x64\levels\gta5\script`
@@ -200,10 +196,8 @@ If you ever modify the RPF files, dont forget to encrpyt them.<br>
 
 #### Prebuilt Stuff
 ##### Prebuilt Shaders
-1. Go to game directory
-2. Put the `common` folder to the game directory.
-##### Prebuilt Game Scripts
-* Scripts Already included in update2.rpf, you can replace it in future with one that you builded it.
+1. Go to the Game Directory
+2. Put the `common` folder to the Game Directory.
 
 ## Running The Game
 1. In the game directory, create a file named `launch.bat` and add these contents:
@@ -237,7 +231,7 @@ rag
 
 # Final Thoughts
 
-Thanks for reading my precious tutorial, please consider starring or forking the repository if this helped u<br>
+Thanks for reading my precious tutorial, please consider starring or forking the repository.<br>
 **Feel free to contribute the repository, you'll be welcomed if you dont make stupid thingies.**
 
 <!-- Made with ❤️ by Smashtika(@yungDoom) -->
