@@ -2,7 +2,7 @@
 
 ![Icon](/other/design/icon/icon.png)
 
-<h1 align="left">📜 GTA V Source Code Build Guide</h1>
+<h1 align="left"> 📜 GTA V Source Code Build Guide </h1>
  
 🖥️ *Working Status of the Tools and Game:* [See Here](/workingstatus.md)<br>
 🔨 *Known Bugs, Errors and Issues:* [See Here](/knownissues.md)
@@ -20,16 +20,16 @@
    4. [Prebuilt File](#prebuilt-file)
 3. [Prerequisites Setup](#prerequisites-setup)
 4. [Patching The Source Code](#patching-the-source-code)
-5. [Building The Game Binary/Executable](#building-the-game-binaryexecutable)
-6. [Building Shaders](#building-shaders)
-7. [Building Game Scripts](#building-game-scripts)
-8. [Patching Game Assets](#patching-game-assets)
-   1. [Modifying the RPF Files](#modifying-the-rpf-files)
-   2. [Prebuilt Stuff](#prebuilt-stuff)
-      1. [Prebuilt Shaders](#prebuilt-shaders)
-9. [Running The Game](#running-the-game)
-10. [BankRelease & Debug Controls](#bankrelease--debug-controls)
-11. [Final Thoughts](#final-thoughts)
+5. [Building Process](#building-process)
+   1. [Building The Game Binary/Executable](#building-the-game-binaryexecutable)
+   2. [Building Shaders](#building-shaders)
+   3. [Building Game Scripts](#building-game-scripts)
+10. [Patching Game Assets](#patching-game-assets)
+   1. [Main](#main)
+   2. [Modifying the RPF Files](#modifying-the-rpf-files)
+11. [Running The Game](#running-the-game)
+12. [BankRelease & Debug Controls](#bankrelease--debug-controls)
+13. [Final Thoughts](#final-thoughts)
 
 
 ## Prerequisites
@@ -52,7 +52,7 @@
  - [DirectX SDK June 2010](https://download.microsoft.com/download/A/E/7/AE743F1F-632B-4809-87A9-AA1BB3458E31/DXSDK_Jun10.exe)
  - (OPTIONAL) [3D Studio Max 2010 SDK](https://archive.org/details/sdk-3ds-max-2010)
  - [Incredibuild 4.0](https://xoreax-incredibuild.software.informer.com/4.0/)
-    - This is only needed for Compiling Shaders and Game Scripts.
+    - This is only needed for compiling Shaders and Game Scripts.
  - [7-Zip](https://7-zip.org/a/7z2301-x64.exe)
     - For extracting the archives.
  - [OpenIV](https://openiv.com/WebIV/guest.php?get=1)
@@ -82,7 +82,7 @@ ___
 3. Install Visual Studio 2012
    - Uncheck all optional components in the installer **except "Microsoft Foundation Classes for C++"** to save space, none of them are needed for the build.
 4. Install Update 4 for Visual Studio 2012
-5. Install Incredibuild 4.0 (Only needed for compiling shaders and game scripts)
+5. Install Incredibuild 4.0
    - If you encounter the error that the installer is "Blocked by your administrator", follow these steps:
       1. Hold Shift and right click the `incredibuild4_0.exe` file, select "Copy as path"
       2. Open Command Prompt as Administrator
@@ -132,7 +132,9 @@ mklink /D /J "X:\gta5\titleupdate\dev_ng" "INSERT_RETAIL_COPY_HERE"
     ┗ 📂 tools_ng
 ```
 
-## Building The Game Binary/Executable
+## Building Process
+
+### Building The Game Binary/Executable
 1. Run `X:\gta5\src\dev_ng\game\VS_Project\load_sln_unity_2012.bat`
 	- If prompted with "How do you want to open this file?", check "Always use this app to open .sln files" and Select **Visual Studio 2012** then click OK
 2. Once the solution loads, open the dropdown menu that says "Debug" at the top, select "Configuration Manager"
@@ -149,10 +151,10 @@ mklink /D /J "X:\gta5\titleupdate\dev_ng" "INSERT_RETAIL_COPY_HERE"
 
 > [!WARNING]
 > Building shaders can be skipped using the [prebuilt file above](#prebuilt-file)<br>
-> These steps are here to allow modding or for those who prefer to build from source as much as possible<br>
-> If you prefer using prebuilt file, [here is all the instruction to make it work.](#prebuilt-stuff)
+> Extract `common.zip` and just put the `common` folder to the Game Directory.
+> These steps are here to allow modding or for those who prefer to build from source as much as possible
 
-## Building Shaders
+### Building Shaders
 1. Under "Shaders", right click the "shaders_rc" project and click "Build"
 2. (OPTIONAL) Build low quality shaders
    1. Right click the "shaders_rc" project and click "Properties"
@@ -161,7 +163,7 @@ mklink /D /J "X:\gta5\titleupdate\dev_ng" "INSERT_RETAIL_COPY_HERE"
    4. Rebuild shaders and wait it to finish
 3. Copy `X:\gta5\titleupdate\dev_ng\common` to game directory.
 
-## Building Game Scripts
+### Building Game Scripts
 1. Open Command Prompt and Run the following commands:
 ```batch
 X:
@@ -181,6 +183,8 @@ ragScriptEditor
 
 ## Patching Game Assets
 
+#### Main
+
 1. Install ``update.rpf and update2.rpf from GTA V build 2699`` from [Prerequisites List](#prerequisites)
 2. Put `update.rpf` and `update2.rpf` files to `<Game Directory>\update\` folder
    * **Dont forget to backup your old files from update folder.**
@@ -191,12 +195,6 @@ If you ever modify the RPF files, dont forget to encrpyt them.<br>
 1. From `rush_patches-master.zip`, copy all files in the `ARCHIVEFIX` folder to a separate location
 2. Drag RPF file(s) onto `ArchiveFix.exe`
    * Don't drag the both files at the same time, **just drag one by one**.
-
-
-#### Prebuilt Stuff
-##### Prebuilt Shaders
-1. Go to the Game Directory
-2. Put the `common` folder to the Game Directory.
 
 ## Running The Game
 1. In the game directory, create a file named `launch.bat` and add these contents:
@@ -230,7 +228,7 @@ rag
 
 # Final Thoughts
 
-Thanks for reading my precious tutorial, please consider starring or forking the repository.<br>
+Thanks for reading my precious tutorial, if u liked it please consider starring or forking the repository.<br>
 **Feel free to contribute the repository, you'll be welcomed if you dont make stupid thingies.**
 
 <!-- Made with ❤️ by Smashtika(@yungDoom) -->
