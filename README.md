@@ -66,7 +66,7 @@
     - [Mirror Link](https://www.bojarcz.uk/gIKgDXuVHNzIgXkiwpB.zip)
 
 ## Prebuilt File
- - [Shaders](https://github.com/WH0LEWHALE/gtav-sourcecode-build-guide/files/14649717/common.zip) ([You can build your own shaders and play with them without any problem.](#building-shaders))
+ - [Shaders](https://github.com/WH0LEWHALE/gtav-sourcecode-build-guide/files/14649717/common.zip)
 
 ___
 
