@@ -9,8 +9,10 @@
 ## Main
 - [x] Game
   - [ ] Script Hook V and ASI Loaders
+     - It doesn't work because memory offsets and certificate problems.
 - [x] Tools
-  - [x] Rage Script Editor
+  - [x] RagScriptEditor
+     - Works perfect in a **Single Core Virtual Machine**.
   - [x] Rag
     - [x] Rag UI
     - [x] Rag Interface 
