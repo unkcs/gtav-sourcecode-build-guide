@@ -17,7 +17,7 @@
    1. [Base](#base)
    2. [Dependencies](#dependencies)
    3. [Miscellaneous](#miscellaneous)
-2. [Prebuilt File](#prebuilt-file)
+   4. [Prebuilt File](#prebuilt-file)
 3. [Prerequisites Setup](#prerequisites-setup)
 4. [Patching The Source Code](#patching-the-source-code)
 5. [Building The Game Binary/Executable](#building-the-game-binaryexecutable)
@@ -65,7 +65,7 @@
  - (OPTIONAL) [gIKgDXuVHNzIgXkiwpB.zip - Art Asset Leak](https://big.fileditchnew.ch/b9/gIKgDXuVHNzIgXkiwpB.zip)
     - [Mirror Link](https://www.bojarcz.uk/gIKgDXuVHNzIgXkiwpB.zip)
 
-## Prebuilt File
+### Prebuilt File
  - [Shaders](https://github.com/WH0LEWHALE/gtav-sourcecode-build-guide/files/14649717/common.zip)
 
 ___
