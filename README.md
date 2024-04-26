@@ -257,18 +257,17 @@ rag
 
 # Known Bugs and Errors
 
-> B = Bug - E = Error - F = Fix
+#### When I create "Vehicles" Widgets, the game crashes.<br>
+Before Opening The Save Game, just enter the game normally and dont load the save, create vehicle widgets then load the game.
 
-**B:** When I create "Vehicles" Widgets, the game crashes.<br>
-**F:** Before Opening The Save Game, just enter the game normally and dont load the save, create vehicle widgets then load the game.
+#### Fatal Error: Unable to create default effect 'common:/shaders/im', cannot continue.<br>
+If u didn't put the shaders to the game directory or you dont have the low quality shaders, then this error may appear.<br>
+Just try these solutions in order to make the game work:
 
-**E:** Fatal Error: Unable to create default effect 'common:/shaders/im', cannot continue.<br>
-**F:** If u didn't put the shaders to the game directory or you dont have the low quality shaders, then this error may appear.
-
-#### Solution 1: 
+###### Solution 1: 
 Just Simply Put the shaders to the game directory and compile the low quality shaders by following tutorial.
 
-#### Solution 2:
+###### Solution 2:
 Just make your shaders quality "High" and dont lower that.<br>
 To do this, Follow this steps:
 
@@ -277,11 +276,11 @@ To do this, Follow this steps:
 3. Change  `<ShaderQuality value="0" />` To `<ShaderQuality value="1" />`
 4. Save the file and Done!
 
-**E:** Couldn't connect to RAG.exe. Keep trying?<br>
-**F:** Just Simply Open the RAG Manually, then start **launch.bat**.
+#### Couldn't connect to RAG.exe. Keep trying?<br>
+Just Simply Open the RAG Manually, then start **launch.bat**.
 
-**E:** Fatal Error: Fatal disc error (code -*)<br>
-**F:** You are %100 missing some files,misdragged something or you have corrupted game files.
+#### Fatal Error: Fatal disc error (code -*)<br>
+You are %100 missing some files,misdragged something or you have corrupted game files.
 
 ## Known Issues
 * Game crashes if you open "Keybinds" Menu in *BankRelease* or *Debug* Builds.
