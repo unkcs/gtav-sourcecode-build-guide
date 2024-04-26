@@ -257,10 +257,10 @@ rag
 
 # Known Bugs and Errors
 
-#### When I create "Vehicles" Widgets, the game crashes.<br>
+#### When I create "Vehicles" Widgets, the game crashes.
 Before Opening The Save Game, just enter the game normally and dont load the save, create vehicle widgets then load the game.
 
-#### Fatal Error: Unable to create default effect 'common:/shaders/im', cannot continue.<br>
+#### Fatal Error: Unable to create default effect 'common:/shaders/im', cannot continue.
 If u didn't put the shaders to the game directory or you dont have the low quality shaders, then this error may appear.<br>
 Just try these solutions in order to make the game work:
 
@@ -276,10 +276,10 @@ To do this, Follow this steps:
 3. Change  `<ShaderQuality value="0" />` To `<ShaderQuality value="1" />`
 4. Save the file and Done!
 
-#### Couldn't connect to RAG.exe. Keep trying?<br>
+#### Couldn't connect to RAG.exe. Keep trying?
 Just Simply Open the RAG Manually, then start **launch.bat**.
 
-#### Fatal Error: Fatal disc error (code -*)<br>
+#### Fatal Error: Fatal disc error (code -*)
 You are %100 missing some files,misdragged something or you have corrupted game files.
 
 ## Known Issues
