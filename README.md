@@ -29,10 +29,10 @@
 6. [Running The Game](#running-the-game)
 7. [BankRelease & Debug Controls](#bankrelease--debug-controls)
 8. [Known Bugs and Errors](#known-bugs-and-errors)
-9. [Known Issues](#known-issues)
+   1. [Known Issues](#known-issues)
 10. [Working Status](#working-status)
    1. [Compiling](#compiling)
-   2. [Main / Base] 
+   2. [Main / Base](#main--base)
 12. [Final Thoughts](#final-thoughts)
 
 
@@ -285,7 +285,7 @@ To do this, Follow this steps:
 **E:** Fatal Error: Fatal disc error (code -*)<br>
 **F:** You are %100 missing some files,misdragged something or you have corrupted game files.
 
-# Known Issues
+## Known Issues
 * Game crashes if you open "Keybinds" Menu in *BankRelease* or *Debug* Builds.
   * It's because the game tries to load a missing debug keyboard layout file.
     * This can probably be fixed by just editing some lines in the source code.
