@@ -30,10 +30,10 @@
 7. [BankRelease & Debug Controls](#bankrelease--debug-controls)
 8. [Known Bugs and Errors](#known-bugs-and-errors)
    1. [Known Issues](#known-issues)
-10. [Working Status](#working-status)
+9. [Working Status](#working-status)
    1. [Compiling](#compiling)
    2. [Main / Base](#main--base)
-12. [Final Thoughts](#final-thoughts)
+10. [Final Thoughts](#final-thoughts)
 
 
 ## Prerequisites
