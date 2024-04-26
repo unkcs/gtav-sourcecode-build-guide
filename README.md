@@ -265,7 +265,7 @@ If u didn't put the shaders to the game directory or you dont have the low quali
 Just try these solutions in order to make the game work:
 
 ###### Solution 1: 
-Just Simply Put the shaders to the game directory and compile the low quality shaders by following tutorial.
+Just Simply Put the shaders to the game directory and compile the low quality shaders by [following tutorial](#building-shaders).
 
 ###### Solution 2:
 Just make your shaders quality "High" and dont lower that.<br>
