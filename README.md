@@ -5,7 +5,6 @@
 <h1 align="left"> 📜 GTA V Source Code Build Guide </h1>
  
 🖥️ *Working Status of the Tools and Game:* [See Here](/workingstatus.md)<br>
-🔨 *Known Bugs, Errors and Issues:* [See Here](/knownissues.md)
 
 ⚠️ *If you having any problem, let us know in the ["Issues"](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/issues) section of this repository!*<br>
 💬 *You can check out ["Discussions"](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/discussions) for talking and discuss.*
@@ -29,7 +28,12 @@
    2. [Modifying the RPF Files](#modifying-the-rpf-files)
 6. [Running The Game](#running-the-game)
 7. [BankRelease & Debug Controls](#bankrelease--debug-controls)
-8. [Final Thoughts](#final-thoughts)
+8. [Known Bugs and Errors](#known-bugs-and-errors)
+9. [Known Issues](#known-issues)
+10. [Working Status](#working-status)
+   1. [Compiling](#compiling)
+   2. [Main / Base] 
+12. [Final Thoughts](#final-thoughts)
 
 
 ## Prerequisites
@@ -225,6 +229,66 @@ rag
 ## BankRelease & Debug Controls
 
 [Almost Every Controls & Keys](/other/controls)
+
+# Working Status
+
+#### Compiling
+- [x] Can Compile Game
+- [x] Can Compile Tools
+- [x] Can Compile Game Scripts
+- [x] Can Compile Shaders
+
+#### Main / Base
+- [x] Game
+  - [ ] Script Hook V and ASI Loaders
+     - It doesn't work because memory offsets and certificate problems.
+- [x] Tools
+  - [x] RagScriptEditor
+     - Works perfect in a **Single Core Virtual Machine**.
+  - [x] Rag
+    - [x] Rag UI
+    - [x] Rag Interface 
+  - [x] Map Viewer
+  - [x] Shortcut Menu 
+  - [x] Other Tools
+    - Note that Some Perforce login required tools will not work, they need some modifications and Perforce.
+      - Perforce Download Links:
+        1. Helix Core: https://www.perforce.com/downloads/helix-core-free-small-teams
+        2. Helix Visual Client: https://www.perforce.com/downloads/helix-visual-client-p4v
+
+
+# Known Bugs and Errors
+
+> B = Bug - E = Error - F = Fix
+
+**B:** When I create "Vehicles" Widgets, the game crashes.<br>
+**F:** Before Opening The Save Game, just enter the game normally and dont load the save, create vehicle widgets then load the game.
+
+**E:** Fatal Error: Unable to create default effect 'common:/shaders/im', cannot continue.<br>
+**F:** If u didn't put the shaders to the game directory or you dont have the low quality shaders, then this error may appear.
+
+#### Solution 1: 
+Just Simply Put the shaders to the game directory and compile the low quality shaders by following tutorial.
+
+#### Solution 2:
+Just make your shaders quality "High" and dont lower that.<br>
+To do this, Follow this steps:
+
+1. Go To **\Documents\Rockstar Games\GTA V**
+2. Open *settings.xml*
+3. Change  `<ShaderQuality value="0" />` To `<ShaderQuality value="1" />`
+4. Save the file and Done!
+
+**E:** Couldn't connect to RAG.exe. Keep trying?<br>
+**F:** Just Simply Open the RAG Manually, then start **launch.bat**.
+
+**E:** Fatal Error: Fatal disc error (code -*)<br>
+**F:** You are %100 missing some files,misdragged something or you have corrupted game files.
+
+# Known Issues
+* Game crashes if you open "Keybinds" Menu in *BankRelease* or *Debug* Builds.
+  * It's because the game tries to load a missing debug keyboard layout file.
+    * This can probably be fixed by just editing some lines in the source code.
 
 # Final Thoughts
 
