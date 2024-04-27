@@ -151,7 +151,7 @@ https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/assets/146978592/a07cf
 
 > [!WARNING]
 > Building shaders can be skipped using the [prebuilt file above](#prebuilt-file)<br>
-> Extract `common.zip` and just put the `common` folder to the Game Directory
+> Extract `common.zip` and just put the `common` folder to the Game Directory<br>
 > These steps are here to allow modding or for those who prefer to build from source as much as possible.
 
 ### Building Shaders
