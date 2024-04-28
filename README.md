@@ -71,7 +71,7 @@
 
 ### Prebuilt Files
  - [Shaders](https://github.com/WH0LEWHALE/gtav-sourcecode-build-guide/files/14649717/common.zip)
- - [Scripts](https://drive.google.com/file/d/1AVMC_MBPpqKp0BIrOI-_lLq98QmwRn46/view) (Already included in update.rpf and update2.rpf from GTA V build 2699, Just for backup purposes.)
+ - [Scripts](https://drive.google.com/file/d/1AVMC_MBPpqKp0BIrOI-_lLq98QmwRn46/view) (Already included in *update.rpf and update2.rpf from GTA V build 2699*, Just for backup purposes.)
 
 ___
 
@@ -189,16 +189,16 @@ ragScriptEditor
 
 #### Main Game Assets
 
-1. Install ``update.rpf and update2.rpf from GTA V build 2699`` from [Prerequisites List](#prerequisites)
+1. Install `update.rpf and update2.rpf from GTA V build 2699` from [Prerequisites List](#prerequisites)
 2. Put `update.rpf` and `update2.rpf` files to `<Game Directory>\update\` folder
-   * **Dont forget to backup your old files from update folder.**
+   - **Dont forget to backup your old files from update folder.**
 
 #### Modifying the RPF Files
 If you ever modify the RPF files, dont forget to encrpyt them.<br>
 **Here you can see how to do it:**
 1. From `rush_patches-master.zip`, copy all files in the `ARCHIVEFIX` folder to a separate location
 2. Drag RPF file(s) onto `ArchiveFix.exe`
-   * Don't drag the both files at the same time, **just drag one by one**.
+   - Don't drag the both files at the same time, **just drag one by one**.
 
 ## Running The Game
 1. Rename Original GTA Executable to `LGTA5.exe` and Rename your compiled executable to `GTA5.exe`
@@ -288,18 +288,18 @@ Just Simply Open the RAG Manually, then start **launch.bat**.
 #### RagScriptEditor
 
 ##### RagScriptEditor crashing while at building cache.
-   * This is well-known issue, You need to do everything again in VM, if you're already in a VM, Delete the Virtual Machine and start over.
-   * Related Issues: [#46](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/issues/46)
+   - This is well-known issue, You need to do everything again in VM, if you're already in a VM, Delete the Virtual Machine and start over.
+   - Related Issues: [#46](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/issues/46)
 
 ##### RagScriptEditor Building Cache stuck at zero
-   * Sometimes it can happen and i think it's an processor issue, try in single core.
-   * Related Issues: [#15](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/issues/15)
+   - Sometimes it can happen and i think it's an processor issue, try in single core.
+   - Related Issues: [#15](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/issues/15)
 
 ### Gameplay
 
 #### Game crashes if you open "Keybinds" Menu in *BankRelease* or *Debug* Builds
-  * It's because the game tries to load a missing debug keyboard layout file
-    * This can probably be fixed by just editing some lines in the source code.
+  - It's because the game tries to load a missing debug keyboard layout file
+    - This can probably be fixed by just editing some lines in the source code.
 
 # Final Thoughts
 
