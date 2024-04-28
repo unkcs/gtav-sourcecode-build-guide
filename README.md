@@ -74,7 +74,7 @@ ___
 
 > [!NOTE]
 > It is recommended to create a virtual machine for this build process, Although the build process can be done on your Real PC too!<br>
-> in Windows, **VMWare/Hyper-V or VirtualBox are recommended to run the Virtual Machine.**<br>
+> in Windows, **VMWare, Hyper-V or VirtualBox** are recommended to run the Virtual Machine.<br>
 > in Linux, **virt-manager** are recommended to run the Virtual Machine.
 
 ## Prerequisites Setup
