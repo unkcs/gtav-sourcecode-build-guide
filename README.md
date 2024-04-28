@@ -22,17 +22,18 @@
    2. [Building Shaders](#building-shaders)
    3. [Building Game Scripts](#building-game-scripts)
 5. [Patching Game Assets](#patching-game-assets)
-   1. [Modifying the RPF Files](#modifying-the-rpf-files)
-6. [Running The Game](#running-the-game)
-7. [BankRelease & Debug Controls](#bankrelease--debug-controls)
-8. [Known Bugs and Errors](#known-bugs-and-errors)
+   1. [Main Game Assets](#main-game-assets)
+   2. [Modifying the RPF Files](#modifying-the-rpf-files)
+7. [Running The Game](#running-the-game)
+8. [BankRelease & Debug Controls](#bankrelease--debug-controls)
+9. [Known Bugs and Errors](#known-bugs-and-errors)
    1. [Known Issues](#known-issues)
       1. [Main Issues](#main-issues)
       2. [Gameplay](#gameplay)
-9. [Working Status](#working-status)
+10. [Working Status](#working-status)
    1. [Compiling](#compiling)
    2. [Main Working Status](#main-working-status)
-10. [Final Thoughts](#final-thoughts)
+11. [Final Thoughts](#final-thoughts)
 
 
 ## Prerequisites
@@ -46,6 +47,7 @@
     - Archive Password: `Mi76#b>9mRed`
    - You can verify the authenticity of the file by its SHA1 hash: `ca39323730ed644fa534a2946506d4287f92a799`
      - To verify with 7-Zip, right click the file and select `7-Zip > CRC SHA > SHA1`
+ - [update.rpf and update2.rpf from GTA V build 2699](https://mega.nz/file/72plXYpY#B9A3vDidqPUVhfXDP5hWCS8lc90lcdGZsGfjuWkBDe8)
  - Some Patience and Technical Competence
 
 ### Dependencies
@@ -70,7 +72,7 @@
 
 ### Prebuilt Files
  - [Shaders](https://github.com/WH0LEWHALE/gtav-sourcecode-build-guide/files/14649717/common.zip)
- - [Scripts](https://drive.google.com/file/d/1AVMC_MBPpqKp0BIrOI-_lLq98QmwRn46/view)
+ - [Scripts](https://drive.google.com/file/d/1AVMC_MBPpqKp0BIrOI-_lLq98QmwRn46/view) (Already included in update.rpf and update2.rpf from GTA V build 2699, Just for backup purposes.)
 
 ___
 
@@ -187,6 +189,12 @@ ragScriptEditor
 
 
 ## Patching Game Assets
+
+#### Main Game Assets
+
+1. Install ``update.rpf and update2.rpf from GTA V build 2699`` from [Prerequisites List](#prerequisites)
+2. Put `update.rpf` and `update2.rpf` files to `<Game Directory>\update\` folder
+   * **Dont forget to backup your old files from update folder.**
 
 #### Modifying the RPF Files
 If you ever modify the RPF files, dont forget to encrpyt them.<br>
