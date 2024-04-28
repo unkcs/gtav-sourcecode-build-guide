@@ -14,7 +14,7 @@
    1. [Base](#base)
    2. [Dependencies](#dependencies)
    3. [Miscellaneous](#miscellaneous)
-   4. [Prebuilt File](#prebuilt-file)
+   4. [Prebuilt Files](#prebuilt-files)
 2. [Prerequisites Setup](#prerequisites-setup)
 3. [Patching The Source Code](#patching-the-source-code)
 4. [Building Process](#building-process)
@@ -22,7 +22,7 @@
    2. [Building Shaders](#building-shaders)
    3. [Building Game Scripts](#building-game-scripts)
 5. [Patching Game Assets](#patching-game-assets)
-   1. [Main](#main)
+   1. [Main Game Assets](#main-game-assets)
    2. [Modifying the RPF Files](#modifying-the-rpf-files)
 6. [Running The Game](#running-the-game)
 7. [BankRelease & Debug Controls](#bankrelease--debug-controls)
@@ -30,7 +30,7 @@
    1. [Known Issues](#known-issues)
 9. [Working Status](#working-status)
    1. [Compiling](#compiling)
-   2. [Main / Base](#main--base)
+   2. [Main Working Status](#main-working-status)
 10. [Final Thoughts](#final-thoughts)
 
 
@@ -67,8 +67,9 @@
  - (OPTIONAL) [gIKgDXuVHNzIgXkiwpB.zip - Art Asset Leak](https://big.fileditchnew.ch/b9/gIKgDXuVHNzIgXkiwpB.zip)
     - [Mirror Link](https://www.bojarcz.uk/gIKgDXuVHNzIgXkiwpB.zip)
 
-### Prebuilt File
+### Prebuilt Files
  - [Shaders](https://github.com/WH0LEWHALE/gtav-sourcecode-build-guide/files/14649717/common.zip)
+ - [Scripts](https://drive.google.com/file/d/1AVMC_MBPpqKp0BIrOI-_lLq98QmwRn46/view) (Already included in *update.rpf and update2.rpf from GTA V build 2699*, Just for backup purposes.)
 
 ___
 
@@ -150,8 +151,9 @@ If you confused, Watch this video:
 https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/assets/146978592/a07cfd2e-a350-419e-ad9e-db6fc7a1ccff
 
 > [!WARNING]
-> Building shaders can be skipped using the [prebuilt file above](#prebuilt-file)<br>
-> Extract `common.zip` and just put the `common` folder to the Game Directory<br>
+> Building shaders and game scripts can be skipped using the [prebuilt files above](#prebuilt-files)<br>
+> For Shaders, Extract `common.zip` and just put the `common` folder to the Game Directory<br>
+> For Scripts, Run OpenIV and put the `script.rpf` file to `\update2.rpf\x64\levels\gta5\script`<br>
 > These steps are here to allow modding or for those who prefer to build from source as much as possible.
 
 ### Building Shaders
@@ -183,7 +185,7 @@ ragScriptEditor
 
 ## Patching Game Assets
 
-#### Main
+#### Main Game Assets
 
 1. Install ``update.rpf and update2.rpf from GTA V build 2699`` from [Prerequisites List](#prerequisites)
 2. Put `update.rpf` and `update2.rpf` files to `<Game Directory>\update\` folder
@@ -234,7 +236,7 @@ rag
 - [x] Can Compile Game Scripts
 - [x] Can Compile Shaders
 
-#### Main / Base
+#### Main Working Status
 - [x] Game
   - [ ] Script Hook V and ASI Loaders
      - It doesn't work because memory offsets and certificate problems.
@@ -278,7 +280,21 @@ To do this, Follow this steps:
 Just Simply Open the RAG Manually, then start **launch.bat**.
 
 ## Known Issues
-* Game crashes if you open "Keybinds" Menu in *BankRelease* or *Debug* Builds
+
+### Main Issues
+
+#### RagScriptEditor
+
+##### RagScriptEditor crashing while at building cache.
+   * This is well-known issue, You need to do everything again in VM, if you're already in a VM, Delete the Virtual Machine and start over.
+   * Related Issues: [#46](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/issues/46)
+
+##### RagScriptEditor Building Cache stuck at zero
+   * Sometimes it can happen and i think it's an processor issue, try in single core.
+
+### Gameplay
+
+#### Game crashes if you open "Keybinds" Menu in *BankRelease* or *Debug* Builds
   * It's because the game tries to load a missing debug keyboard layout file
     * This can probably be fixed by just editing some lines in the source code.
 
