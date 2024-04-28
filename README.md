@@ -28,6 +28,8 @@
 7. [BankRelease & Debug Controls](#bankrelease--debug-controls)
 8. [Known Bugs and Errors](#known-bugs-and-errors)
    1. [Known Issues](#known-issues)
+      1. [Main Issues](#main-issues)
+      2. [Gameplay](#gameplay)
 9. [Working Status](#working-status)
    1. [Compiling](#compiling)
    2. [Main Working Status](#main-working-status)
@@ -291,6 +293,7 @@ Just Simply Open the RAG Manually, then start **launch.bat**.
 
 ##### RagScriptEditor Building Cache stuck at zero
    * Sometimes it can happen and i think it's an processor issue, try in single core.
+   * Related Issues: [#15](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/issues/15)
 
 ### Gameplay
 
