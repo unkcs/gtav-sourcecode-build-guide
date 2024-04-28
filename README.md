@@ -196,12 +196,13 @@ If you ever modify the RPF files, dont forget to encrpyt them.<br>
    * Don't drag the both files at the same time, **just drag one by one**.
 
 ## Running The Game
-1. In the game directory, create a file named `launch.bat` and add these contents:
+1. Rename Original GTA Executable to `LGTA5.exe` and Rename your compiled executable to `GTA5.exe`
+2. In the game directory, create a file named `launch.bat` and add these contents:
 ```batch
 cd %~dp0
-game_win64_bankrelease.exe -noSocialClub -nokeyboardhook -nonetlogs
+GTA5.exe -noSocialClub -nokeyboardhook -nonetlogs
 ```
-2. (OPTIONAL) Add additional arguments:
+3. (OPTIONAL) Add additional arguments:
  - `-kbgame` - Start game with game keyboard enabled
  - `-output` - Show console log of game, the game opens a little bit slow.
  - `-rag` - Enable support for RAG, the internal game debugging tool
@@ -211,7 +212,7 @@ game_win64_bankrelease.exe -noSocialClub -nokeyboardhook -nonetlogs
     - If you dont type this parameter, you will spawned in a random location as a random character with a random clothes
  - Additional standard game arguments can be added as well.
    - [Here is the almost all the arguments list](other/LAUNCHPARAMS_GTAV.txt) 
-3. (OPTIONAL) Launch RAG with the following commands in Command Prompt:
+4. (OPTIONAL) Launch RAG with the following commands in Command Prompt:
 ```batch
 X:
 cd X:\gta5\src\dev_ng
@@ -219,7 +220,7 @@ setenv
 cd ..\..\tools_ng\bin\rag
 rag
 ```
-4. Run `launch.bat`
+5. Run `launch.bat`
 
 ## BankRelease & Debug Controls
 
