@@ -47,7 +47,6 @@
     - Archive Password: `Mi76#b>9mRed`
    - You can verify the authenticity of the file by its SHA1 hash: `ca39323730ed644fa534a2946506d4287f92a799`
      - To verify with 7-Zip, right click the file and select `7-Zip > CRC SHA > SHA1`
- - [update.rpf and update2.rpf from GTA V build 2699](https://mega.nz/file/72plXYpY#B9A3vDidqPUVhfXDP5hWCS8lc90lcdGZsGfjuWkBDe8)
  - Some Patience and Technical Competence
 
 ### Dependencies
@@ -60,18 +59,19 @@
  - [7-Zip](https://7-zip.org/a/7z2301-x64.exe)
     - For extracting the archives.
  - [OpenIV](https://openiv.com/WebIV/guest.php?get=1)
-    - For editing the game files.
+    - For editing the game files.  
 
 ### Miscellaneous
  - [Rush Patches](https://github.com/WH0LEWHALE/gtav-sourcecode-build-guide/files/14641602/rush_patches-master.zip)
  - [DLL Patches](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/files/14965810/dll_patches_x.zip)
+ - [Golge Patch](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/files/15143314/golge_patch.zip)
  - (OPTIONAL) [3rdParty Folder](https://mega.nz/file/SqojFJZL#eYINo1pnspuTvdbocz4cA7NYZA8BN2H2nm7YEXuzlFw)
  - (OPTIONAL) [gIKgDXuVHNzIgXkiwpB.zip - Art Asset Leak](https://big.fileditchnew.ch/b9/gIKgDXuVHNzIgXkiwpB.zip)
     - [Mirror Link](https://www.bojarcz.uk/gIKgDXuVHNzIgXkiwpB.zip)
 
 ### Prebuilt Files
  - [Shaders](https://github.com/WH0LEWHALE/gtav-sourcecode-build-guide/files/14649717/common.zip)
- - [Scripts](https://drive.google.com/file/d/1AVMC_MBPpqKp0BIrOI-_lLq98QmwRn46/view) (Already included in *update.rpf and update2.rpf from GTA V build 2699*, Just for backup purposes.)
+ - [Scripts](https://drive.google.com/file/d/1AVMC_MBPpqKp0BIrOI-_lLq98QmwRn46/view)
 
 ___
 
@@ -117,7 +117,9 @@ setx /m RS_PROJECT gta5
 2. Copy `game` and `rage` folders to `X:\gta5\src\dev_ng`, make sure to overwrite when copying
 3. (OPTIONAL) To skip launcher requirement for running the game, copy `game` and `rage` folders from `rush_patches-master.zip\OPTIONAL_FIXES` to the same folder
 4. Copy all folders in `dll_patches_x.zip` to `X:\gta5\tools_ng\bin`, make sure to overwrite when copying
-5. (OPTIONAL) Install 3rdParty Folder, Extract and Put the folder to `X:\gta5\`.
+4. Extract and Copy the folder in `golge_patches.zip` to `X:\gta5\src\dev_ng`, make sure to overwrite when copying
+   - This patch is required to play with newer versions.
+6. (OPTIONAL) Install 3rdParty Folder, Extract and Put the folder to `X:\gta5\`.
 
 **By far, Your Folder Structure should look like this:**
 ```
@@ -187,12 +189,6 @@ ragScriptEditor
 
 ## Patching Game Assets
 
-#### Main Game Assets
-
-1. Install ``update.rpf and update2.rpf from GTA V build 2699`` from [Prerequisites List](#prerequisites)
-2. Put `update.rpf` and `update2.rpf` files to `<Game Directory>\update\` folder
-   * **Dont forget to backup your old files from update folder.**
-
 #### Modifying the RPF Files
 If you ever modify the RPF files, dont forget to encrpyt them.<br>
 **Here you can see how to do it:**
@@ -244,7 +240,6 @@ rag
      - It doesn't work because memory offsets and certificate problems.
 - [x] Tools
   - [x] RagScriptEditor
-     - Works perfect in a **Single Core Virtual Machine**.
   - [x] Rag
     - [x] Rag UI
     - [x] Rag Interface 
