@@ -65,7 +65,6 @@
 ### Miscellaneous
  - [Rush Patches](https://github.com/WH0LEWHALE/gtav-sourcecode-build-guide/files/14641602/rush_patches-master.zip)
  - [DLL Patches](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/files/14965810/dll_patches_x.zip)
- - [Golge Patch](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/files/15143314/golge_patch.zip)
  - (OPTIONAL) [3rdParty Folder](https://mega.nz/file/SqojFJZL#eYINo1pnspuTvdbocz4cA7NYZA8BN2H2nm7YEXuzlFw)
  - (OPTIONAL) [gIKgDXuVHNzIgXkiwpB.zip - Art Asset Leak](https://big.fileditchnew.ch/b9/gIKgDXuVHNzIgXkiwpB.zip)
     - [Mirror Link](https://www.bojarcz.uk/gIKgDXuVHNzIgXkiwpB.zip)
@@ -118,9 +117,7 @@ setx /m RS_PROJECT gta5
 2. Copy `game` and `rage` folders to `X:\gta5\src\dev_ng`, make sure to overwrite when copying
 3. (OPTIONAL) To skip launcher requirement for running the game, copy `game` and `rage` folders from `rush_patches-master.zip\OPTIONAL_FIXES` to the same folder
 4. Copy all folders in `dll_patches_x.zip` to `X:\gta5\tools_ng\bin`, make sure to overwrite when copying
-4. Extract and Copy the folder in `golge_patches.zip` to `X:\gta5\src\dev_ng`, make sure to overwrite when copying
-   - This patch is required to play with newer versions.
-6. (OPTIONAL) Install 3rdParty Folder, Extract and Put the folder to `X:\gta5\`.
+5. (OPTIONAL) Install 3rdParty Folder, Extract and Put the folder to `X:\gta5\`.
 
 **By far, Your Folder Structure should look like this:**
 ```
