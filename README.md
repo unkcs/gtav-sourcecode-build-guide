@@ -144,7 +144,8 @@ setx /m RS_PROJECT gta5
 8. Change build the type at the top of the window from "Debug" to "BankRelease"
 10. At the top of the window, select `Build > Build Solution` and wait for build to finish
 11. Copy output binary to game folder.
-* **If you confused, Watch this video:**
+
+If you confused, Watch this video:
 
 https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/assets/146978592/a07cfd2e-a350-419e-ad9e-db6fc7a1ccff
 
