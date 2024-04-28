@@ -74,7 +74,7 @@ ___
 
 > [!NOTE]
 > It is recommended to create a virtual machine for this build process, Although the build process can be done on your Real PC too!<br>
-> in Windows, **VMWare/Hyper-V or VirtualBox are recommended to run the Virtual Machine due to their performance.**<br>
+> in Windows, **VMWare/Hyper-V or VirtualBox are recommended to run the Virtual Machine.**<br>
 > in Linux, **virt-manager** are recommended to run the Virtual Machine.
 
 ## Prerequisites Setup
@@ -82,7 +82,7 @@ ___
    - **If you get error S1023, Uninstall `Visual C++ 2010 Redistributable` & Reinstall DirectX SDK - (June 2010).**
 2. Install 7-Zip
 3. Install Visual Studio 2012
-   - Uncheck all optional components in the installer **except "Microsoft Foundation Classes for C++"** to save space, none of them are needed for the build.
+   - Uncheck all optional components in the installer **except "Microsoft Foundation Classes for C++"** to save space due to none of them are needed for the build.
 4. Install Update 4 for Visual Studio 2012
 5. Install Incredibuild 4.0
    - If you encounter the error that the installer is "Blocked by your administrator", follow these steps:
@@ -91,24 +91,23 @@ ___
       3. Paste the path and press Enter
    - Select to install "Incredibuild Agent", "Incredibuild Coordinator", and the extension for Visual Studio
 6. Install OpenIV
-7. Install [DLL Patches and Rush Patches](#miscellaneous)
-8. (OPTIONAL) Install 3D Studio Max 2010 SDK
-9. Create X:\ Drive by following the steps at the bottom:
+7. (OPTIONAL) Install 3D Studio Max 2010 SDK
+8. Create X:\ Drive by following the steps at the bottom:
     1. Open Command Prompt
     2. Create a new folder called "GTA" to the Desktop or anywhere that you want
     3. Run `net use X: \\localhost\c$\<Path to working folder for build> /persistent:yes`
        - Example: `net use X: \\localhost\c$\Users\<username>\Desktop\GTA /persistent:yes`
-10. Create the folder `X:\gta5` and copy all folders from `GTAVSP.7z\GTA V Source` into it
-11. Right click the folder `X:\gta5`, select "Properties", uncheck "Read-only", click Apply then OK
-12. Open Command Prompt as Administrator and run the following commands, then close:
+9. Create the folder `X:\gta5` and copy all folders from `GTAVSP.7z\GTA V Source` into it
+10. Right click the folder `X:\gta5`, select "Properties", uncheck "Read-only", click Apply then OK
+11. Open Command Prompt as Administrator and run the following commands, then close:
 ```batch
 setx /m RS_TOOLSROOT X:\gta5\tools_ng
 setx /m DXSDK_DIR "C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)"
 setx /m RS_CODEBRANCH X:\gta5\src\dev_ng
 setx /m RS_PROJECT gta5
 ```
-13. Put all the game files to the `X:\gta5\titleupdate\dev_ng` directory
-14. To ensure changes are finalized, restart build machine/computer.
+12. Put all the game files to the `X:\gta5\titleupdate\dev_ng` directory
+13. To ensure changes are finalized, restart build machine/computer.
 
 ## Patching The Source Code
 1. Open `rush_patches-master.zip`
