@@ -117,13 +117,13 @@ setx /m RS_PROJECT gta5
 2. Copy `game` and `rage` folders to `X:\gta5\src\dev_ng`, make sure to overwrite when copying
 3. (OPTIONAL) To skip launcher requirement for running the game, copy `game` and `rage` folders from `rush_patches-master.zip\OPTIONAL_FIXES` to the same folder
 4. Copy all folders in `dll_patches_x.zip` to `X:\gta5\tools_ng\bin`, make sure to overwrite when copying
-5. (OPTIONAL) Install 3rdParty Folder, Extract and Put the folder to `X:\gta5\`.
+5. (OPTIONAL) Install 3rdParty Folder, Extract and Put the folder to `X:\`.
 
 **By far, Your Folder Structure should look like this:**
 ```
 🖥️ X:
+ ┣ 📂 3rdParty - (OPTIONAL)
  ┗ 📂 gta5
-    ┣ 📂 3rdParty - (OPTIONAL)
     ┣ 📂 src
     ┃ ┣ 📂 dev_ng
     ┣ 📂 script
