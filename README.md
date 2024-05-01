@@ -124,11 +124,11 @@ setx /m RS_PROJECT gta5
 🖥️ X:
  ┣ 📂 3rdParty - (OPTIONAL)
  ┗ 📂 gta5
-    ┣ 📂 src
-    ┃ ┣ 📂 dev_ng
-    ┣ 📂 script
-    ┃ ┣ 📂 dev_ng 
-    ┗ 📂 tools_ng
+ ┃   ┣ 📂 src
+ ┃ ┃ ┣ 📂 dev_ng
+ ┃   ┣ 📂 script
+ ┃ ┃ ┣ 📂 dev_ng 
+ ┃   ┗ 📂 tools_ng
 ```
 
 ## Building Process
@@ -300,6 +300,10 @@ Just Simply Open the RAG Manually, then start **launch.bat**.
 #### Game crashes if you open "Keybinds" Menu in *BankRelease* or *Debug* Builds
   - It's because the game tries to load a missing debug keyboard layout file
     - This can probably be fixed by just editing some lines in the source code.
+   
+#### When you load the Save, all of your money will be wiped to zero
+  - There is a code that does this, i dont know which but i think its because we are in Debug or BankRelease
+     - You can just use money hacks to bring your old money. 
 
 # Final Thoughts
 
