@@ -302,8 +302,8 @@ Just Simply Open the RAG Manually, then start **launch.bat**.
     - This can probably be fixed by just editing some lines in the source code.
    
 #### When you load the Save, all of your money will be wiped to zero
-  - There is a code that does this, i dont know which but i think its because we are in Debug or BankRelease
-     - You can just use money hacks to bring your old money. 
+  - There is a code that does this, i dont know which code but its because we are in Debug or BankRelease
+     - You can just use money hacks to bring your old money.
 
 # Final Thoughts
 
