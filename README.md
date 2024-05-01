@@ -145,6 +145,7 @@ setx /m RS_PROJECT gta5
       - If you get the error `C1060: Compiler is out of heap space` during build, come back to the above setting and turn it off
 7. Right-click the "game" project and select "Properties" and do step 5,6 again
 8. Change build the type at the top of the window from "Debug" to "BankRelease"
+   - This Step is optional, you can build the game in "Debug" too but you will lost alot of performance
 10. At the top of the window, select `Build > Build Solution` and wait for build to finish
 11. Copy output binary to game folder.
 
@@ -302,7 +303,7 @@ Just Simply Open the RAG Manually, then start **launch.bat**.
     - This can probably be fixed by just editing some lines in the source code.
    
 #### When you load the Save, all of your money will be wiped to zero
-  - There is a code that does this, i dont know which code but its because we are in Debug or BankRelease
+  - There is a code that does this, i dont know which code but its because we are in BankRelease or Debug
      - You can just use money hacks to bring your old money.
 
 # Final Thoughts
