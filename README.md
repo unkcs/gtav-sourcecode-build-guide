@@ -124,11 +124,11 @@ setx /m RS_PROJECT gta5
 🖥️ X:
  ┣ 📂 3rdParty - (OPTIONAL)
  ┗ 📂 gta5
- ┃   ┣ 📂 src
+ ┃ ┣ 📂 src
  ┃ ┃ ┣ 📂 dev_ng
- ┃   ┣ 📂 script
+ ┃ ┣ 📂 script
  ┃ ┃ ┣ 📂 dev_ng 
- ┃   ┗ 📂 tools_ng
+ ┃ ┗ 📂 tools_ng
 ```
 
 ## Building Process
