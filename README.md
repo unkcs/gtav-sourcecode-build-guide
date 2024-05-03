@@ -7,8 +7,6 @@
 ⚠️ *If you having any problem, let us know in the ["Issues"](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/issues) section of this repository!*<br>
 💬 *You can check out ["Discussions"](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/discussions) for talking and discuss.*
 
-📩 *You can contact me from discord: yungdoomofficial*
-
 # Contents
 1. [Prerequisites](#prerequisites)
    1. [Base](#base)
@@ -34,6 +32,7 @@
    1. [Compiling](#compiling)
    2. [Main Working Status](#main-working-status)
 11. [Final Thoughts](#final-thoughts)
+   1. [Credits](#credits) 
 
 
 ## Prerequisites
@@ -68,6 +67,8 @@
  - (OPTIONAL) [3rdParty Folder](https://mega.nz/file/SqojFJZL#eYINo1pnspuTvdbocz4cA7NYZA8BN2H2nm7YEXuzlFw)
  - (OPTIONAL) [gIKgDXuVHNzIgXkiwpB.zip - Art Asset Leak](https://big.fileditchnew.ch/b9/gIKgDXuVHNzIgXkiwpB.zip)
     - [Mirror Link](https://www.bojarcz.uk/gIKgDXuVHNzIgXkiwpB.zip)
+ - (OPTIONAL) [Network Fix](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/files/15204357/Network.Fix.zip)
+    - This will fix the Studio or IP related issues.
 
 ### Prebuilt Files
  - [Shaders](https://github.com/WH0LEWHALE/gtav-sourcecode-build-guide/files/14649717/common.zip)
@@ -311,4 +312,14 @@ Just Simply Open the RAG Manually, then start **launch.bat**.
 Thanks for reading my precious tutorial, if u liked it please consider starring or forking the repository.<br>
 **Feel free to contribute the repository, you'll be welcomed if you dont make stupid thingies.**
 
+## Credits
+
+- [@GTA-Source-Helper](https://github.com/GTA-Source-Helper)
+   - Network Fix
+- [@RockstarAdvancedGameEngine](https://github.com/RockstarAdvancedGameEngine)
+   - OneDrive Link for Source Code
+   - Mirror Link for Art Asset Leak
+- Other Contributors / Supporters
+   - Thanks to all of you guys!
+  
 <!-- Made with ❤️ by Smashtika(@yungDoom) -->
