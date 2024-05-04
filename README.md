@@ -22,17 +22,17 @@
 5. [Patching Game Assets](#patching-game-assets)
    1. [Main Game Assets](#main-game-assets)
    2. [Modifying the RPF Files](#modifying-the-rpf-files)
-7. [Running The Game](#running-the-game)
-8. [BankRelease & Debug Controls](#bankrelease--debug-controls)
-9. [Known Bugs and Errors](#known-bugs-and-errors)
+6. [Running The Game](#running-the-game)
+7. [BankRelease & Debug Controls](#bankrelease--debug-controls)
+8. [Known Bugs and Errors](#known-bugs-and-errors)
    1. [Known Issues](#known-issues)
       1. [Main Issues](#main-issues)
       2. [Gameplay](#gameplay)
-10. [Working Status](#working-status)
+9. [Working Status](#working-status)
    1. [Compiling](#compiling)
    2. [Main Working Status](#main-working-status)
-11. [Final Thoughts](#final-thoughts)
-   1. [Credits](#credits) 
+10. [Final Thoughts](#final-thoughts)
+    1. [Credits](#credits) 
 
 
 ## Prerequisites
