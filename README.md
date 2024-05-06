@@ -4,6 +4,8 @@
 
 <h1 align="left"> 📜 GTA V Source Code Build Guide </h1>
 
+This tutorial will accompany you in compiling and setting up GTA 5 source code.
+
 # Contents
 1. [Prerequisites](#prerequisites)
    1. [Base](#base)
@@ -28,7 +30,8 @@
 9. [Working Status](#working-status)
    1. [Compiling](#compiling)
    2. [Main Working Status](#main-working-status)
-10. [Final Thoughts](#final-thoughts)
+10. [QNA](#qna) 
+11. [Final Thoughts](#final-thoughts)
     1. [Credits](#credits) 
 
 
@@ -304,20 +307,14 @@ Just Simply Open the RAG Manually, then start **launch.bat**.
 #### When you load the Save, all of your money will be wiped to zero
   - There is a code that does this, i dont know which code but its because we are in BankRelease or Debug
      - You can just use money hacks to bring your old money.
+   
+## QNA
+
+#### How to hide the debug overlay? (weird texts on the screen)
+   - CTRL + Tab to the Debug keyboard, and then tap Numpad 0(Insert) 2 times.
 
 # Final Thoughts
 
 Thanks for reading my precious tutorial, if u liked it please consider starring or forking the repository.<br>
-**Feel free to contribute the repository, you'll be welcomed if you dont make stupid thingies.**
-
-## Credits
-
-- [@GTA-Source-Helper](https://github.com/GTA-Source-Helper)
-   - Network Fix
-- [@RockstarAdvancedGameEngine](https://github.com/RockstarAdvancedGameEngine)
-   - OneDrive Link for Source Code
-   - Mirror Link for Art Asset Leak
-- Other Contributors / Supporters
-   - Thanks to all of you guys!
   
 <!-- Made with ❤️ by Smashtika(@yungDoom) -->
