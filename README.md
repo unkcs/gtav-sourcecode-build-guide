@@ -4,9 +4,6 @@
 
 <h1 align="left"> 📜 GTA V Source Code Build Guide </h1>
 
-⚠️ *If you having any problem, let us know in the ["Issues"](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/issues) section of this repository!*<br>
-💬 *You can check out ["Discussions"](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/discussions) for talking and discuss.*
-
 # Contents
 1. [Prerequisites](#prerequisites)
    1. [Base](#base)
