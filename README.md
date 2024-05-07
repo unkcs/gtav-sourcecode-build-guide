@@ -312,9 +312,20 @@ Just Simply Open the RAG Manually, then start **launch.bat**.
 
 #### How to hide the debug overlay? (weird texts on the screen)
    - CTRL + Tab to the Debug keyboard, and then tap Numpad 0(Insert) 2 times.
+   - Related Discussions: [#21](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/discussions/21)
 
 # Final Thoughts
 
 Thanks for reading my precious tutorial, if u liked it please consider starring or forking the repository.<br>
+
+## Credits
+
+- [@GTA-Source-Helper](https://github.com/GTA-Source-Helper)
+   - Network Fix
+- [@RockstarAdvancedGameEngine](https://github.com/RockstarAdvancedGameEngine)
+   - OneDrive Link for Source Code
+   - Mirror Link for Art Asset Leak
+- Other Contributors / Supporters
+   - Thanks to all of you guys!
   
 <!-- Made with ❤️ by Smashtika(@yungDoom) -->
