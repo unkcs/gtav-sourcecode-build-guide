@@ -315,7 +315,7 @@ Just Simply Open the RAG Manually, then start **launch.bat**.
 - Related Issues: [#46](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/issues/46)
 
 ##### RagScriptEditor Building Cache stuck at zero
-- Sometimes it can happen and i think it's an processor issue, try in single core.
+- Sometimes it can happen and i think it's an processor issue, try in single core, dual core or quad core if you have it.
 - Related Issues: [#15](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/issues/15)
 
 ### Gameplay
@@ -331,8 +331,18 @@ Just Simply Open the RAG Manually, then start **launch.bat**.
 ## QNA
 
 #### How to hide the debug overlay? (weird texts on the screen)
-   - CTRL + Tab to the Debug keyboard, and then tap Numpad 0(Insert) 2 times.
-   - Related Discussions: [#21](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/discussions/21)
+- CTRL + Tab to the Debug keyboard, and then tap Numpad 0(Insert) 2 times.
+- Related Discussions: [#21](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/discussions/21)
+
+#### How to Change the game window name "Fuzzy" to whatever name i want?
+- It's very easy to do, follow this steps:
+  1. Find this file: `X:\gta5\src\dev_ng\game\Core\app.cpp`
+  2. Go to Line 1020
+  3. The Line should look like this:
+  ```cpp
+  if(!CSystem::Init("Fuzzy"))
+  ```
+  4. Change the "Fuzzy" to whatever name you want!
 
 # Final Thoughts
 
