@@ -59,7 +59,9 @@ This tutorial will accompany you in compiling and setting up GTA 5 source code.
  - [7-Zip](https://7-zip.org/a/7z2301-x64.exe)
     - For extracting the archives.
  - [OpenIV](https://openiv.com/WebIV/guest.php?get=1)
-    - For editing the game files.  
+    - For editing the game files.
+ - [Git](https://git-scm.com/)
+    - For Applying some patches.   
 
 ### Miscellaneous
  - [Rush Patches](https://github.com/WH0LEWHALE/gtav-sourcecode-build-guide/files/14641602/rush_patches-master.zip)
@@ -69,6 +71,7 @@ This tutorial will accompany you in compiling and setting up GTA 5 source code.
     - [Mirror Link](https://www.bojarcz.uk/gIKgDXuVHNzIgXkiwpB.zip)
  - [Network Fix](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/files/15209424/Network.Fix.zip)
     - This will fix the Studio or IP related issues.
+- [Mixed Patches](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/files/15320504/Mixed_Patches.zip)
 
 ### Prebuilt Files
  - [Shaders](https://github.com/WH0LEWHALE/gtav-sourcecode-build-guide/files/14649717/common.zip)
@@ -119,7 +122,21 @@ setx /m RS_PROJECT gta5
 3. (OPTIONAL) To skip launcher requirement for running the game, copy `game` and `rage` folders from `rush_patches-master.zip\OPTIONAL_FIXES` to the same folder
 4. Copy all folders in `dll_patches_x.zip` to `X:\gta5\tools_ng\bin`, make sure to overwrite when copying
 5. Extract `Network Fix.zip` and put these 2 files to `x:\gta5\tools_ng\etc\globals`, make sure to overwrite when copying
-6. (OPTIONAL) Install 3rdParty Folder, Extract and Put the folder to `X:\`.
+6. (OPTIONAL) Install 3rdParty Folder, Extract and Put the folder to `X:\`
+7. This is where **Git** program means more necessary, Do this steps in order to apply the mixed patches
+   1. Extract and Put everything in `Mixed_Patches.zip` to `X:\gta5\src\dev_ng` Directory
+   2. Launch `auto.bat` then wait until all the patches to applied
+   3. Close the command prompt.
+8. We need to increase max rpf filepack size, watch this steps:
+   1. Find this file: `X:\gta5\src\dev_ng\rage\base\src\file\packfile.cpp`
+   2. Go to Line 62 and change this:
+```cpp
+    extern const int MaxPackfiles = 1024+718+650/*HD texture pack*/+256/*even more packs*/+256/*more DLC for 2018*/+256/*more DLC for 2019*/+256/*more DLC for 2020*/+256/*more DLC for 2021*/;
+```
+**To This:**
+```cpp
+    extern const int MaxPackfiles = 1024+718+650/*HD texture pack*/+256/*even more packs*/+256/*more DLC for 2018*/+256/*more DLC for 2019*/+256/*more DLC for 2020*/+256/*more DLC for 2021*/+512/*more DLC for 2024*/;
+```
 
 **By far, Your Folder Structure should look like this:**
 ```
@@ -291,23 +308,23 @@ Just Simply Open the RAG Manually, then start **launch.bat**.
 #### RagScriptEditor
 
 ##### RagScriptEditor crashing while at building cache.
-   - This is well-known issue, You need to do everything again in VM, if you're already in a VM, Delete the Virtual Machine and start over.
-   - Related Issues: [#46](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/issues/46)
+- This is well-known issue, You need to do everything again in VM, if you're already in a VM, Delete the Virtual Machine and start over.
+- Related Issues: [#46](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/issues/46)
 
 ##### RagScriptEditor Building Cache stuck at zero
-   - Sometimes it can happen and i think it's an processor issue, try in single core.
-   - Related Issues: [#15](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/issues/15)
+- Sometimes it can happen and i think it's an processor issue, try in single core.
+- Related Issues: [#15](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/issues/15)
 
 ### Gameplay
 
 #### Game crashes if you open "Keybinds" Menu in *BankRelease* or *Debug* Builds
-  - It's because the game tries to load a missing debug keyboard layout file
-    - This can probably be fixed by just editing some lines in the source code.
+- It's because the game tries to load a missing debug keyboard layout file
+   - This can probably be fixed by just editing some lines in the source code.
    
 #### When you load the Save, all of your money will be wiped to zero
-  - There is a code that does this, i dont know which code but its because we are in BankRelease or Debug
-     - You can just use money hacks to bring your old money.
-   
+- There is a code that does this, i dont know which code but its because we are in BankRelease or Debug
+   - You can just use money hacks to bring your old money.
+
 ## QNA
 
 #### How to hide the debug overlay? (weird texts on the screen)
