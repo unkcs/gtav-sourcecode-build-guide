@@ -95,7 +95,7 @@ ___
 2. Install 7-Zip
 3. Install Visual Studio 2012 and Update 4 for Visual Studio 2012
    - Uncheck all optional components in the installer **except "Microsoft Foundation Classes for C++"** to save space due to none of them are needed for the build.
-   - **Reminder:** If you will use **[Visual Studio 2022 Patches](#miscellaneous)**, You do not need to download this.
+   - **Reminder:** If you will use **[Visual Studio 2022 Patches](#miscellaneous)**, You do not need to download these.
 4. (OPTIONAL) Install Visual Studio 2022
    - **Reminder:** If you're using **[Visual Studio 2022 Patches](#miscellaneous)**, You should need to download this.
    - You should select **Desktop Development with C++** and **.NET Desktop development** and finally just select **Universal Windows Platform Development** from *Workloads*
