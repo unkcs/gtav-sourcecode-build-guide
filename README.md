@@ -53,6 +53,7 @@ This tutorial will accompany you in compiling and setting up GTA 5 source code.<
 ### Dependencies
  - [Visual Studio 2012](https://files.dog/MSDN/Visual%20Studio%202012/en_visual_studio_ultimate_2012_x86_dvd_2262106.iso)
     - [Update 4 for Visual Studio 2012](https://files.dog/MSDN/Visual%20Studio%202012%20Update%204/mu_visual_studio_2012_update_4_x86_dvd_3161759.iso)
+    - If you will use **[Visual Studio 2022 Patches](#miscellaneous)**, you do not need to download these.
  - [DirectX SDK June 2010](https://download.microsoft.com/download/A/E/7/AE743F1F-632B-4809-87A9-AA1BB3458E31/DXSDK_Jun10.exe)
  - (OPTIONAL) [3D Studio Max 2010 SDK](https://archive.org/details/sdk-3ds-max-2010)
  - [Incredibuild 4.0](https://xoreax-incredibuild.software.informer.com/4.0/)
@@ -73,6 +74,7 @@ This tutorial will accompany you in compiling and setting up GTA 5 source code.<
  - [Network Fix](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/files/15209424/Network.Fix.zip)
     - This will fix the Studio or IP related issues.
 - [Mixed Patches](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/files/15320504/Mixed_Patches.zip)
+- (OPTIONAL) [Visual Studio 2022 Patches](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/files/15360863/VBlSfKBylNQplMIPLL.zip)  
 
 ### Prebuilt Files
  - [Shaders](https://github.com/WH0LEWHALE/gtav-sourcecode-build-guide/files/14649717/common.zip)
@@ -124,11 +126,12 @@ setx /m RS_PROJECT gta5
 4. Copy all folders in `dll_patches_x.zip` to `X:\gta5\tools_ng\bin`, make sure to overwrite when copying
 5. Extract `Network Fix.zip` and put these 2 files to `x:\gta5\tools_ng\etc\globals`, make sure to overwrite when copying
 6. (OPTIONAL) Install 3rdParty Folder, Extract and Put the folder to `X:\`
-7. This is where **Git** comes in handy, Do this steps in order to apply the mixed patches
+7. (OPTIONAL) Extract `VBlSfKBylNQplMIPLL.zip` and put everything to `X:\gta5\src\dev_ng` 
+8. This is where **Git** comes in handy, Do this steps in order to apply the mixed patches
    1. Extract and Put everything in `Mixed_Patches.zip` to `X:\gta5\src\dev_ng` Directory
    2. Launch `auto.bat` then wait until all the patches to applied
    3. Close the command prompt.
-8. We need to increase max rpf filepack size, watch this steps:
+9. We need to increase max rpf filepack size, watch this steps:
    1. Find this file: `X:\gta5\src\dev_ng\rage\base\src\file\packfile.cpp`
    2. Go to Line 62 and change this:
 ```cpp
