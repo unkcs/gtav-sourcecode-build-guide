@@ -93,39 +93,37 @@ ___
 1. Install DirectX SDK June 2010
    - **If you get error S1023, Uninstall `Visual C++ 2010 Redistributable` & Reinstall DirectX SDK - (June 2010).**
 2. Install 7-Zip
-3. Install Visual Studio 2012
+3. Install Visual Studio 2012 and Update 4 for Visual Studio 2012
    - Uncheck all optional components in the installer **except "Microsoft Foundation Classes for C++"** to save space due to none of them are needed for the build.
    - **Reminder:** If you will use **[Visual Studio 2022 Patches](#miscellaneous)**, You do not need to download this.
-4. Install Update 4 for Visual Studio 2012
-   - **Reminder:** If you will use **[Visual Studio 2022 Patches](#miscellaneous)**, You do not need to download this.
-6. (OPTIONAL) Install Visual Studio 2022
+4. (OPTIONAL) Install Visual Studio 2022
    - **Reminder:** If you're using **[Visual Studio 2022 Patches](#miscellaneous)**, You should need to download this.
    - You should select **Desktop Development with C++** and **.NET Desktop development** and finally just select **Universal Windows Platform Development** from *Workloads*
    -  Enter to the *Individual Components* Tab and Search for **Windows 11 SDK**, **C++ MFC for latest v143 build tools (x86 & x64)**, **C++ ATL for latest v143 build tools (x86 & x64)** and select them.
-7. Install Incredibuild 4.0
+5. Install Incredibuild 4.0
    - If you encounter the error that the installer is "Blocked by your administrator", follow these steps:
       1. Hold Shift and right click the `incredibuild4_0.exe` file, select "Copy as path"
       2. Open Command Prompt as Administrator
       3. Paste the path and press Enter
    - Select to install "Incredibuild Agent", "Incredibuild Coordinator", and the extension for Visual Studio
-8. Install OpenIV
-9. (OPTIONAL) Install 3D Studio Max 2010 SDK
-10. Create X:\ Drive by following the steps at the bottom:
+6. Install OpenIV
+7. (OPTIONAL) Install 3D Studio Max 2010 SDK
+8. Create X:\ Drive by following the steps at the bottom:
     1. Open Command Prompt
     2. Create a new folder called "GTA" to the Desktop or anywhere that you want
     3. Run `net use X: \\localhost\c$\<Path to working folder for build> /persistent:yes`
        - Example: `net use X: \\localhost\c$\Users\<username>\Desktop\GTA /persistent:yes`
-11. Create the folder `X:\gta5` and copy all folders from `GTAVSP.7z\GTA V Source` into it
-12. Right click the folder `X:\gta5`, select "Properties", uncheck "Read-only", click Apply then OK
-13. Open Command Prompt as Administrator and run the following commands, then close:
+9. Create the folder `X:\gta5` and copy all folders from `GTAVSP.7z\GTA V Source` into it
+10. Right click the folder `X:\gta5`, select "Properties", uncheck "Read-only", click Apply then OK
+11. Open Command Prompt as Administrator and run the following commands, then close:
 ```batch
 setx /m RS_TOOLSROOT X:\gta5\tools_ng
 setx /m DXSDK_DIR "C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)"
 setx /m RS_CODEBRANCH X:\gta5\src\dev_ng
 setx /m RS_PROJECT gta5
 ```
-13. Put all the game files to the `X:\gta5\titleupdate\dev_ng` directory
-14. To ensure changes are finalized, restart build machine/computer.
+12. Put all the game files to the `X:\gta5\titleupdate\dev_ng` directory
+13. To ensure changes are finalized, restart build machine/computer.
 
 ## Patching The Source Code
 1. Open `rush_patches-master.zip`
