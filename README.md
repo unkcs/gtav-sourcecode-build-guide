@@ -101,7 +101,7 @@ ___
 6. (OPTIONAL) Install Visual Studio 2022
    - **Reminder:** If you're using **[Visual Studio 2022 Patches](#miscellaneous)**, You should need to download this.
    - You should select **Desktop Development with C++** and **.NET Desktop development** and finally just select **Universal Windows Platform Development** from *Workloads*
-   -  Enter to the *Individual Components* Tab and Search for **Windows 11 SDK** and select it.
+   -  Enter to the *Individual Components* Tab and Search for **Windows 11 SDK**, **C++ MFC for latest v143 build tools (x86 & x64)**, **C++ ATL for latest v143 build tools (x86 & x64)** and select them.
 7. Install Incredibuild 4.0
    - If you encounter the error that the installer is "Blocked by your administrator", follow these steps:
       1. Hold Shift and right click the `incredibuild4_0.exe` file, select "Copy as path"
