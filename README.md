@@ -39,31 +39,31 @@ This tutorial will accompany you in compiling and setting up GTA 5 source code.<
 ## Prerequisites
 ### Base
  - Windows 10/11
-    - [LTSC 2021](https://archive.org/download/Windows10EnterpriseLTSC202164Bit/en-us_windows_10_enterprise_ltsc_2021_x64_dvd_d289cf96.iso) Recommended, but you can use Normal Windows 10/11 too.
- - Latest Grand Theft Auto V Files from Steam, Epic Games or maybe Rockstar Games Launcher. 
- - Minimum 65GB Free Space, 140GB+ is Recommended because of the game files and programs.
+    - [LTSC 2021](https://archive.org/download/Windows10EnterpriseLTSC202164Bit/en-us_windows_10_enterprise_ltsc_2021_x64_dvd_d289cf96.iso) Recommended, but you can use Normal Windows 10/11 too
+ - Latest Grand Theft Auto V Files from Steam, Epic Games or maybe Rockstar Games Launcher
+ - Minimum 65GB Free Space, 140GB+ is Recommended because of the game files and programs
  - GTAVSP.7z - Source Code<br>
     - **Download Link: [All Available Download Links](/source-code-links.md)**
     - Archive Password: `Mi76#b>9mRed`
    - You can verify the authenticity of the file by its SHA1 hash: `ca39323730ed644fa534a2946506d4287f92a799`
      - To verify with 7-Zip, right click the file and select `7-Zip > CRC SHA > SHA1`
  - [update.rpf and update2.rpf from GTA V build 2699](https://mega.nz/file/72plXYpY#B9A3vDidqPUVhfXDP5hWCS8lc90lcdGZsGfjuWkBDe8)
- - Some Patience and Technical Competence
+ - Some Patience and Technical Competence.
 
 ### Dependencies
  - [Visual Studio 2012](https://files.dog/MSDN/Visual%20Studio%202012/en_visual_studio_ultimate_2012_x86_dvd_2262106.iso)
     - [Update 4 for Visual Studio 2012](https://files.dog/MSDN/Visual%20Studio%202012%20Update%204/mu_visual_studio_2012_update_4_x86_dvd_3161759.iso)
-    - If you will use **[Visual Studio 2022 Patches](#miscellaneous)**, You do not need to download these.
- - (OPTIONAL) [Visual Studio 2022]
-    - If you're using **[Visual Studio 2022 Patches](#miscellaneous)**, You should need to download this.
+    - You do not need to download these if you're gonna use **[Visual Studio 2022 Patches](#miscellaneous)**
+ - (OPTIONAL) [Visual Studio 2022](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&cid=2030&passive=false)
+    - If you want to use **[Visual Studio 2022 Patches](#miscellaneous)**, You should need to download this
  - [DirectX SDK June 2010](https://download.microsoft.com/download/A/E/7/AE743F1F-632B-4809-87A9-AA1BB3458E31/DXSDK_Jun10.exe)
  - (OPTIONAL) [3D Studio Max 2010 SDK](https://archive.org/details/sdk-3ds-max-2010)
  - [Incredibuild 4.0](https://xoreax-incredibuild.software.informer.com/4.0/)
-    - This is only needed for compiling Shaders and Game Scripts.
+    - This is only needed for compiling Shaders and Game Scripts
  - [7-Zip](https://7-zip.org/a/7z2301-x64.exe)
-    - For extracting the archives.
+    - For extracting the archives
  - [OpenIV](https://openiv.com/WebIV/guest.php?get=1)
-    - For editing the game files.
+    - For editing the game files
  - [Git](https://git-scm.com/)
     - For Applying some patches.   
 
@@ -73,7 +73,7 @@ This tutorial will accompany you in compiling and setting up GTA 5 source code.<
  - (OPTIONAL) [3rdParty Folder](https://mega.nz/file/SqojFJZL#eYINo1pnspuTvdbocz4cA7NYZA8BN2H2nm7YEXuzlFw)
  - (OPTIONAL) [gIKgDXuVHNzIgXkiwpB.zip - Art Asset Leak](https://big.fileditchnew.ch/b9/gIKgDXuVHNzIgXkiwpB.zip)
     - [Mirror Link](https://www.bojarcz.uk/gIKgDXuVHNzIgXkiwpB.zip)
- - [Network Fix](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/files/15209424/Network.Fix.zip)
+ - (OPTIONAL) [Network Fix](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/files/15209424/Network.Fix.zip)
     - This will fix the Studio or IP related issues.
 - [Mixed Patches](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/files/15320504/Mixed_Patches.zip)
 - (OPTIONAL) [Visual Studio 2022 Patches](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/files/15360863/VBlSfKBylNQplMIPLL.zip)  
@@ -130,7 +130,7 @@ setx /m RS_PROJECT gta5
 2. Copy `game` and `rage` folders to `X:\gta5\src\dev_ng`, make sure to overwrite when copying
 3. (OPTIONAL) To skip launcher requirement for running the game, copy `game` and `rage` folders from `rush_patches-master.zip\OPTIONAL_FIXES` to the same folder
 4. Copy all folders in `dll_patches_x.zip` to `X:\gta5\tools_ng\bin`, make sure to overwrite when copying
-5. Extract `Network Fix.zip` and put these 2 files to `x:\gta5\tools_ng\etc\globals`, make sure to overwrite when copying
+5. (OPTIONAL) Extract `Network Fix.zip` and put these 2 files to `x:\gta5\tools_ng\etc\globals`, make sure to overwrite when copying
 6. (OPTIONAL) Install 3rdParty Folder, Extract and Put the folder to `X:\`
 7. (OPTIONAL) Extract `VBlSfKBylNQplMIPLL.zip` and put everything to `X:\gta5\src\dev_ng` 
 8. This is where **Git** comes in handy, Do this steps in order to apply the mixed patches
