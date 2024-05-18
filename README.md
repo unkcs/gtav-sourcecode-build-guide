@@ -53,7 +53,9 @@ This tutorial will accompany you in compiling and setting up GTA 5 source code.<
 ### Dependencies
  - [Visual Studio 2012](https://files.dog/MSDN/Visual%20Studio%202012/en_visual_studio_ultimate_2012_x86_dvd_2262106.iso)
     - [Update 4 for Visual Studio 2012](https://files.dog/MSDN/Visual%20Studio%202012%20Update%204/mu_visual_studio_2012_update_4_x86_dvd_3161759.iso)
-    - If you will use **[Visual Studio 2022 Patches](#miscellaneous)**, you do not need to download these.
+    - If you will use **[Visual Studio 2022 Patches](#miscellaneous)**, You do not need to download these.
+ - (OPTIONAL) [Visual Studio 2022]
+    - If you're using **[Visual Studio 2022 Patches](#miscellaneous)**, You should need to download this.   
  - [DirectX SDK June 2010](https://download.microsoft.com/download/A/E/7/AE743F1F-632B-4809-87A9-AA1BB3458E31/DXSDK_Jun10.exe)
  - (OPTIONAL) [3D Studio Max 2010 SDK](https://archive.org/details/sdk-3ds-max-2010)
  - [Incredibuild 4.0](https://xoreax-incredibuild.software.informer.com/4.0/)
@@ -94,22 +96,23 @@ ___
 3. Install Visual Studio 2012
    - Uncheck all optional components in the installer **except "Microsoft Foundation Classes for C++"** to save space due to none of them are needed for the build.
 4. Install Update 4 for Visual Studio 2012
-5. Install Incredibuild 4.0
+5. (OPTIONAL) Install Visual Studio 2022
+6. Install Incredibuild 4.0
    - If you encounter the error that the installer is "Blocked by your administrator", follow these steps:
       1. Hold Shift and right click the `incredibuild4_0.exe` file, select "Copy as path"
       2. Open Command Prompt as Administrator
       3. Paste the path and press Enter
    - Select to install "Incredibuild Agent", "Incredibuild Coordinator", and the extension for Visual Studio
-6. Install OpenIV
-7. (OPTIONAL) Install 3D Studio Max 2010 SDK
-8. Create X:\ Drive by following the steps at the bottom:
+7. Install OpenIV
+8. (OPTIONAL) Install 3D Studio Max 2010 SDK
+9. Create X:\ Drive by following the steps at the bottom:
     1. Open Command Prompt
     2. Create a new folder called "GTA" to the Desktop or anywhere that you want
     3. Run `net use X: \\localhost\c$\<Path to working folder for build> /persistent:yes`
        - Example: `net use X: \\localhost\c$\Users\<username>\Desktop\GTA /persistent:yes`
-9. Create the folder `X:\gta5` and copy all folders from `GTAVSP.7z\GTA V Source` into it
-10. Right click the folder `X:\gta5`, select "Properties", uncheck "Read-only", click Apply then OK
-11. Open Command Prompt as Administrator and run the following commands, then close:
+10. Create the folder `X:\gta5` and copy all folders from `GTAVSP.7z\GTA V Source` into it
+11. Right click the folder `X:\gta5`, select "Properties", uncheck "Read-only", click Apply then OK
+12. Open Command Prompt as Administrator and run the following commands, then close:
 ```batch
 setx /m RS_TOOLSROOT X:\gta5\tools_ng
 setx /m DXSDK_DIR "C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)"
