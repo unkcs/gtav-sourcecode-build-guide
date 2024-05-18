@@ -55,7 +55,9 @@ This tutorial will accompany you in compiling and setting up GTA 5 source code.<
     - [Update 4 for Visual Studio 2012](https://files.dog/MSDN/Visual%20Studio%202012%20Update%204/mu_visual_studio_2012_update_4_x86_dvd_3161759.iso)
     - If you will use **[Visual Studio 2022 Patches](#miscellaneous)**, You do not need to download these.
  - (OPTIONAL) [Visual Studio 2022]
-    - If you're using **[Visual Studio 2022 Patches](#miscellaneous)**, You should need to download this.   
+    - If you're using **[Visual Studio 2022 Patches](#miscellaneous)**, You should need to download this.
+    - You should select **Desktop Development with C++** and **.NET Desktop development** and finally just select **Universal Windows Platform Development** from *Workloads*
+   -  Enter to the *Individual Components* Tab and Search for **Windows 11 SDK** and select it.
  - [DirectX SDK June 2010](https://download.microsoft.com/download/A/E/7/AE743F1F-632B-4809-87A9-AA1BB3458E31/DXSDK_Jun10.exe)
  - (OPTIONAL) [3D Studio Max 2010 SDK](https://archive.org/details/sdk-3ds-max-2010)
  - [Incredibuild 4.0](https://xoreax-incredibuild.software.informer.com/4.0/)
@@ -96,7 +98,7 @@ ___
 3. Install Visual Studio 2012
    - Uncheck all optional components in the installer **except "Microsoft Foundation Classes for C++"** to save space due to none of them are needed for the build.
 4. Install Update 4 for Visual Studio 2012
-5. (OPTIONAL) Install Visual Studio 2022
+5. (OPTIONAL) Install Visual Studio 2022 and its components
 6. Install Incredibuild 4.0
    - If you encounter the error that the installer is "Blocked by your administrator", follow these steps:
       1. Hold Shift and right click the `incredibuild4_0.exe` file, select "Copy as path"
@@ -119,8 +121,8 @@ setx /m DXSDK_DIR "C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)"
 setx /m RS_CODEBRANCH X:\gta5\src\dev_ng
 setx /m RS_PROJECT gta5
 ```
-12. Put all the game files to the `X:\gta5\titleupdate\dev_ng` directory
-13. To ensure changes are finalized, restart build machine/computer.
+13. Put all the game files to the `X:\gta5\titleupdate\dev_ng` directory
+14. To ensure changes are finalized, restart build machine/computer.
 
 ## Patching The Source Code
 1. Open `rush_patches-master.zip`
