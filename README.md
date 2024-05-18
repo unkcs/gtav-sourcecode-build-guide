@@ -56,8 +56,6 @@ This tutorial will accompany you in compiling and setting up GTA 5 source code.<
     - If you will use **[Visual Studio 2022 Patches](#miscellaneous)**, You do not need to download these.
  - (OPTIONAL) [Visual Studio 2022]
     - If you're using **[Visual Studio 2022 Patches](#miscellaneous)**, You should need to download this.
-    - You should select **Desktop Development with C++** and **.NET Desktop development** and finally just select **Universal Windows Platform Development** from *Workloads*
-   -  Enter to the *Individual Components* Tab and Search for **Windows 11 SDK** and select it.
  - [DirectX SDK June 2010](https://download.microsoft.com/download/A/E/7/AE743F1F-632B-4809-87A9-AA1BB3458E31/DXSDK_Jun10.exe)
  - (OPTIONAL) [3D Studio Max 2010 SDK](https://archive.org/details/sdk-3ds-max-2010)
  - [Incredibuild 4.0](https://xoreax-incredibuild.software.informer.com/4.0/)
@@ -98,23 +96,26 @@ ___
 3. Install Visual Studio 2012
    - Uncheck all optional components in the installer **except "Microsoft Foundation Classes for C++"** to save space due to none of them are needed for the build.
 4. Install Update 4 for Visual Studio 2012
-5. (OPTIONAL) Install Visual Studio 2022 and its components
-6. Install Incredibuild 4.0
+5. (OPTIONAL) Install Visual Studio 2022
+   - **Reminder:** If you're using **[Visual Studio 2022 Patches](#miscellaneous)**, You should need to download this.
+   - You should select **Desktop Development with C++** and **.NET Desktop development** and finally just select **Universal Windows Platform Development** from *Workloads*
+   -  Enter to the *Individual Components* Tab and Search for **Windows 11 SDK** and select it.
+7. Install Incredibuild 4.0
    - If you encounter the error that the installer is "Blocked by your administrator", follow these steps:
       1. Hold Shift and right click the `incredibuild4_0.exe` file, select "Copy as path"
       2. Open Command Prompt as Administrator
       3. Paste the path and press Enter
    - Select to install "Incredibuild Agent", "Incredibuild Coordinator", and the extension for Visual Studio
-7. Install OpenIV
-8. (OPTIONAL) Install 3D Studio Max 2010 SDK
-9. Create X:\ Drive by following the steps at the bottom:
+8. Install OpenIV
+9. (OPTIONAL) Install 3D Studio Max 2010 SDK
+10. Create X:\ Drive by following the steps at the bottom:
     1. Open Command Prompt
     2. Create a new folder called "GTA" to the Desktop or anywhere that you want
     3. Run `net use X: \\localhost\c$\<Path to working folder for build> /persistent:yes`
        - Example: `net use X: \\localhost\c$\Users\<username>\Desktop\GTA /persistent:yes`
-10. Create the folder `X:\gta5` and copy all folders from `GTAVSP.7z\GTA V Source` into it
-11. Right click the folder `X:\gta5`, select "Properties", uncheck "Read-only", click Apply then OK
-12. Open Command Prompt as Administrator and run the following commands, then close:
+11. Create the folder `X:\gta5` and copy all folders from `GTAVSP.7z\GTA V Source` into it
+12. Right click the folder `X:\gta5`, select "Properties", uncheck "Read-only", click Apply then OK
+13. Open Command Prompt as Administrator and run the following commands, then close:
 ```batch
 setx /m RS_TOOLSROOT X:\gta5\tools_ng
 setx /m DXSDK_DIR "C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)"
