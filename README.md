@@ -76,7 +76,8 @@ This tutorial will accompany you in compiling and setting up GTA 5 source code.<
  - (OPTIONAL) [Network Fix](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/files/15209424/Network.Fix.zip)
     - This will fix the Studio or IP related issues.
 - [Mixed Patches](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/files/15320504/Mixed_Patches.zip)
-- (OPTIONAL / NOT OPTIMIZATION FRIENDLY) [Visual Studio 2022 Patches](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/files/15360863/VBlSfKBylNQplMIPLL.zip)  
+- (OPTIONAL / NOT OPTIMIZATION FRIENDLY) [Visual Studio 2022 Patches](https://github.com/P0L3NARUBA/gtav-sourcecode-build-guide/files/15360863/VBlSfKBylNQplMIPLL.zip)
+    - Since its not supported officialy, the optimizations is not available and a lot of warnings appear. 
 
 ### Prebuilt Files
  - [Shaders](https://github.com/WH0LEWHALE/gtav-sourcecode-build-guide/files/14649717/common.zip)
