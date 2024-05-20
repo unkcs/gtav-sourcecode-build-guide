@@ -265,6 +265,8 @@ rag
 
 #### Compiling
 - [x] Can Compile Game
+   - [x] Can Compile and Debug with Hotreload the whole project with Visual Studio 2022
+      - You can ignore the warnings because they are not affect the gameplay and functionality.
 - [x] Can Compile Tools
 - [x] Can Compile Game Scripts
 - [x] Can Compile Shaders
