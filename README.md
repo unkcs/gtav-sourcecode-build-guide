@@ -127,16 +127,6 @@ setx /m RS_PROJECT gta5
    1. Extract and Put everything in `Mixed_Patches.zip` to `X:\gta5\src\dev_ng` Directory
    2. Launch `auto.bat` then wait until all the patches to applied
    3. Close the command prompt.
-8. We need to increase max rpf filepack size, watch this steps:
-   1. Find this file: `X:\gta5\src\dev_ng\rage\base\src\file\packfile.cpp`
-   2. Go to Line 62 and change this:
-```cpp
-extern const int MaxPackfiles = 1024+718+650/*HD texture pack*/+256/*even more packs*/+256/*more DLC for 2018*/+256/*more DLC for 2019*/+256/*more DLC for 2020*/+256/*more DLC for 2021*/;
-```
-**To This:**
-```cpp
-extern const int MaxPackfiles = 1024+718+650/*HD texture pack*/+256/*even more packs*/+256/*more DLC for 2018*/+256/*more DLC for 2019*/+256/*more DLC for 2020*/+256/*more DLC for 2021*/+512/*more DLC for 2024*/;
-```
 
 **By far, Your Folder Structure should look like this:**
 ```
